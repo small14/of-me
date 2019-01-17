@@ -1,0 +1,30 @@
+2019.01.17 08:56:41.232 [restartedMain] INFO [org.springframework.boot.StartupInfoLogger.logStarting:50] - Starting OfmApplication on iotcomm-001-PC with PID 1140 (D:\WorkSpeace\gitSpeace\of-me\target\classes started by iotcomm-001 in D:\WorkSpeace\gitSpeace\of-me)
+2019.01.17 08:56:41.237 [restartedMain] INFO [org.springframework.boot.SpringApplication.logStartupProfileInfo:675] - No active profile set, falling back to default profiles: default
+2019.01.17 08:56:41.270 [restartedMain] INFO [org.springframework.boot.logging.DeferredLog.logTo:227] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019.01.17 08:56:41.271 [restartedMain] INFO [org.springframework.boot.logging.DeferredLog.logTo:227] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019.01.17 08:56:42.365 [restartedMain] INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:90] - Tomcat initialized with port(s): 80 (http)
+2019.01.17 08:56:42.375 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Initializing ProtocolHandler ["http-nio-80"]
+2019.01.17 08:56:42.381 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Starting service [Tomcat]
+2019.01.17 08:56:42.382 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019.01.17 08:56:42.387 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_60\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files\Java\jdk1.8.0_60\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\install\maven-3.3.9\bin;E:\sonarqube\sonar-scanner-2.8\bin;D:\install\nexus-2.14\nexus-2.14.3-02\bin;%ERLANG_HOME%\bin;D:\install\RabbitMQ Server\rabbitmq_server-3.6.9\sbin;C:\Android;C:\Windows\System32;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;D:\install\TortoiseSVN\bin;C:\Users\iotcomm-001\AppData\Roaming\npm;.]
+2019.01.17 08:56:42.492 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Initializing Spring embedded WebApplicationContext
+2019.01.17 08:56:42.492 [restartedMain] INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:296] - Root WebApplicationContext: initialization completed in 1221 ms
+2019.01.17 08:56:42.730 [restartedMain] INFO [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56] - Init DruidDataSource
+2019.01.17 08:56:43.879 [restartedMain] INFO [com.alibaba.druid.pool.DruidDataSource.init:928] - {dataSource-1} inited
+2019.01.17 08:56:44.393 [restartedMain] INFO [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize:171] - Initializing ExecutorService 'applicationTaskExecutor'
+2019.01.17 08:56:44.541 [restartedMain] WARN [org.thymeleaf.templatemode.TemplateMode.parse:150] - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019.01.17 08:56:44.628 [restartedMain] INFO [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>:61] - Adding welcome page template: index
+2019.01.17 08:56:44.829 [restartedMain] INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:57] - LiveReload server is running on port 35729
+2019.01.17 08:56:44.879 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Starting ProtocolHandler ["http-nio-80"]
+2019.01.17 08:56:44.918 [restartedMain] INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:204] - Tomcat started on port(s): 80 (http) with context path '/ofm'
+2019.01.17 08:56:44.935 [restartedMain] INFO [org.springframework.boot.StartupInfoLogger.logStarted:59] - Started OfmApplication in 4.08 seconds (JVM running for 6.469)
+2019.01.17 08:57:17.439 [http-nio-80-exec-6] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019.01.17 08:57:17.440 [http-nio-80-exec-6] INFO [org.springframework.web.servlet.FrameworkServlet.initServletBean:524] - Initializing Servlet 'dispatcherServlet'
+2019.01.17 08:57:17.458 [http-nio-80-exec-6] INFO [org.springframework.web.servlet.FrameworkServlet.initServletBean:546] - Completed initialization in 18 ms
+2019.01.17 08:57:19.184 [http-nio-80-exec-6] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:46] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/
+2019.01.17 08:57:30.581 [http-nio-80-exec-8] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:46] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/resume
+2019.01.17 08:59:10.362 [http-nio-80-exec-1] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:46] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/blog/article
+2019.01.17 08:59:13.290 [http-nio-80-exec-3] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:46] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/blog/article
+2019.01.17 08:59:19.315 [http-nio-80-exec-2] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:46] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/blog/article
+2019.01.17 08:59:36.619 [http-nio-80-exec-7] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:46] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/blog/article
+2019.01.17 09:00:15.445 [http-nio-80-exec-4] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:46] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/resume

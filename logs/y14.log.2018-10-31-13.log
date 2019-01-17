@@ -1,0 +1,856 @@
+2018.10.31 13:06:27.425 [Thread-21] INFO [org.springframework.context.support.AbstractApplicationContext.doClose:991] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1b827129: startup date [Wed Oct 31 12:59:10 CST 2018]; root of context hierarchy
+2018.10.31 13:06:27.431 [Thread-21] INFO [org.springframework.jmx.export.MBeanExporter.destroy:451] - Unregistering JMX-exposed beans on shutdown
+2018.10.31 13:06:27.431 [Thread-21] INFO [org.springframework.jmx.support.MBeanRegistrationSupport.unregisterBeans:185] - Unregistering JMX-exposed beans
+2018.10.31 13:06:27.434 [Thread-21] INFO [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy:597] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018.10.31 13:06:27.435 [Thread-21] INFO [com.zaxxer.hikari.HikariDataSource.close:381] - HikariPool-2 - Shutdown initiated...
+2018.10.31 13:06:27.440 [Thread-21] INFO [com.zaxxer.hikari.HikariDataSource.close:383] - HikariPool-2 - Shutdown completed.
+2018.10.31 13:06:27.715 [restartedMain] INFO [org.springframework.boot.StartupInfoLogger.logStarting:50] - Starting OfmApplication on iotcomm-001-PC with PID 9116 (D:\WorkSpeace\gitSpeace\SpringBootStudy\target\classes started by iotcomm-001 in D:\WorkSpeace\gitSpeace\SpringBootStudy)
+2018.10.31 13:06:27.715 [restartedMain] INFO [org.springframework.boot.SpringApplication.logStartupProfileInfo:654] - No active profile set, falling back to default profiles: default
+2018.10.31 13:06:27.717 [restartedMain] INFO [org.springframework.context.support.AbstractApplicationContext.prepareRefresh:588] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@445694d3: startup date [Wed Oct 31 13:06:27 CST 2018]; root of context hierarchy
+2018.10.31 13:06:27.726 [restartedMain] WARN [org.springframework.context.support.AbstractApplicationContext.refresh:556] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.sakura.ofm.OfmApplication]; nested exception is java.io.FileNotFoundException: class path resource [com/sakura/ofm/service/BlogService.class] cannot be opened because it does not exist
+2018.10.31 13:06:27.767 [restartedMain] ERROR [org.springframework.boot.SpringApplication.reportFailure:837] - Application run failed org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.sakura.ofm.OfmApplication]; nested exception is java.io.FileNotFoundException: class path resource [com/sakura/ofm/service/BlogService.class] cannot be opened because it does not exist
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:184) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:316) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:233) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:271) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:91) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:692) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:530) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at com.sakura.ofm.OfmApplication.main(OfmApplication.java:10) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_60]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_60]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_60]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_60]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+Caused by: java.io.FileNotFoundException: class path resource [com/sakura/ofm/service/BlogService.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:180) ~[spring-core-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:51) ~[spring-core-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103) ~[spring-core-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.createMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:88) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:75) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:81) ~[spring-core-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:732) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser$SourceClass.getInterfaces(ConfigurationClassParser.java:961) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processInterfaces(ConfigurationClassParser.java:376) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:324) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:245) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:194) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:296) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:245) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:202) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:170) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	... 18 more
+
+2018.10.31 13:41:35.012 [restartedMain] INFO [org.springframework.boot.StartupInfoLogger.logStarting:50] - Starting OfmApplication on iotcomm-001-PC with PID 9116 (D:\WorkSpeace\gitSpeace\SpringBootStudy\target\classes started by iotcomm-001 in D:\WorkSpeace\gitSpeace\SpringBootStudy)
+2018.10.31 13:41:35.012 [restartedMain] INFO [org.springframework.boot.SpringApplication.logStartupProfileInfo:654] - No active profile set, falling back to default profiles: default
+2018.10.31 13:41:35.015 [restartedMain] INFO [org.springframework.context.support.AbstractApplicationContext.prepareRefresh:588] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b2874a8: startup date [Wed Oct 31 13:41:35 CST 2018]; root of context hierarchy
+2018.10.31 13:41:35.265 [restartedMain] INFO [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:326] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$46bbcbcf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018.10.31 13:41:35.316 [restartedMain] INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:91] - Tomcat initialized with port(s): 8080 (http)
+2018.10.31 13:41:35.317 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Initializing ProtocolHandler ["http-nio-8080"]
+2018.10.31 13:41:35.317 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Starting service [Tomcat]
+2018.10.31 13:41:35.317 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018.10.31 13:41:35.337 [localhost-startStop-1] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Initializing Spring embedded WebApplicationContext
+2018.10.31 13:41:35.337 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:285] - Root WebApplicationContext: initialization completed in 322 ms
+2018.10.31 13:41:35.353 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018.10.31 13:41:35.353 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018.10.31 13:41:35.353 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018.10.31 13:41:35.353 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'requestContextFilter' to: [/*]
+2018.10.31 13:41:35.354 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:258] - Mapping filter: 'RequestIPFilter' to urls: [/*]
+2018.10.31 13:41:35.354 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'remoteIpFilter' to: [/*]
+2018.10.31 13:41:35.354 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.ServletRegistrationBean.addRegistration:187] - Servlet dispatcherServlet mapped to [/]
+2018.10.31 13:41:35.378 [restartedMain] INFO [com.zaxxer.hikari.HikariDataSource.getConnection:110] - HikariPool-3 - Starting...
+2018.10.31 13:41:35.629 [restartedMain] INFO [com.zaxxer.hikari.HikariDataSource.getConnection:123] - HikariPool-3 - Start completed.
+2018.10.31 13:41:35.636 [restartedMain] INFO [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory:361] - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018.10.31 13:41:35.648 [restartedMain] INFO [org.hibernate.dialect.Dialect.<init>:157] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2018.10.31 13:41:35.739 [restartedMain] INFO [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory:415] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018.10.31 13:41:35.793 [restartedMain] WARN [org.springframework.context.support.AbstractApplicationContext.refresh:556] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'blogController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ofmBlogService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'blogRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract int com.sakura.ofm.dao.BlogRepository.insertBlog()! No property insertBlog found for type Blog!
+2018.10.31 13:41:35.793 [restartedMain] INFO [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy:597] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018.10.31 13:41:35.793 [restartedMain] INFO [com.zaxxer.hikari.HikariDataSource.close:381] - HikariPool-3 - Shutdown initiated...
+2018.10.31 13:41:35.884 [restartedMain] INFO [com.zaxxer.hikari.HikariDataSource.close:383] - HikariPool-3 - Shutdown completed.
+2018.10.31 13:41:35.885 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Stopping service [Tomcat]
+2018.10.31 13:41:35.901 [restartedMain] ERROR [org.springframework.boot.SpringApplication.reportFailure:837] - Application run failed org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'blogController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ofmBlogService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'blogRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract int com.sakura.ofm.dao.BlogRepository.insertBlog()! No property insertBlog found for type Blog!
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:321) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:548) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at com.sakura.ofm.OfmApplication.main(OfmApplication.java:10) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_60]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_60]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_60]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_60]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ofmBlogService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'blogRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract int com.sakura.ofm.dao.BlogRepository.insertBlog()! No property insertBlog found for type Blog!
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:321) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:514) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:485) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:619) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	... 22 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'blogRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract int com.sakura.ofm.dao.BlogRepository.insertBlog()! No property insertBlog found for type Blog!
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1694) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:514) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:485) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:619) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:514) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:485) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:619) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	... 22 more
+Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract int com.sakura.ofm.dao.BlogRepository.insertBlog()! No property insertBlog found for type Blog!
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:82) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:103) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:208) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:79) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lookupQuery(RepositoryFactorySupport.java:565) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(RepositoryFactorySupport.java:558) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193) ~[?:1.8.0_60]
+	at java.util.Iterator.forEachRemaining(Iterator.java:116) ~[?:1.8.0_60]
+	at java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1049) ~[?:1.8.0_60]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) ~[?:1.8.0_60]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481) ~[?:1.8.0_60]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471) ~[?:1.8.0_60]
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708) ~[?:1.8.0_60]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:1.8.0_60]
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499) ~[?:1.8.0_60]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.mapMethodsToQuery(RepositoryFactorySupport.java:560) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$new$0(RepositoryFactorySupport.java:550) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at java.util.Optional.map(Optional.java:215) ~[?:1.8.0_60]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.<init>(RepositoryFactorySupport.java:550) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:323) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$4(RepositoryFactoryBeanSupport.java:290) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:141) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.util.Lazy.get(Lazy.java:63) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:293) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:102) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1753) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1690) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:514) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:485) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:619) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:514) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:485) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:619) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	... 22 more
+Caused by: org.springframework.data.mapping.PropertyReferenceException: No property insertBlog found for type Blog!
+	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:94) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:358) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:334) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.mapping.PropertyPath.lambda$from$0(PropertyPath.java:287) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at java.util.concurrent.ConcurrentMap.computeIfAbsent(ConcurrentMap.java:324) ~[?:1.8.0_60]
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:269) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:252) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.query.parser.Part.<init>(Part.java:81) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.lambda$new$0(PartTree.java:250) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193) ~[?:1.8.0_60]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175) ~[?:1.8.0_60]
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948) ~[?:1.8.0_60]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481) ~[?:1.8.0_60]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471) ~[?:1.8.0_60]
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708) ~[?:1.8.0_60]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:1.8.0_60]
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499) ~[?:1.8.0_60]
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.<init>(PartTree.java:251) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.lambda$new$0(PartTree.java:380) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193) ~[?:1.8.0_60]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175) ~[?:1.8.0_60]
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948) ~[?:1.8.0_60]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481) ~[?:1.8.0_60]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471) ~[?:1.8.0_60]
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708) ~[?:1.8.0_60]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:1.8.0_60]
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499) ~[?:1.8.0_60]
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.<init>(PartTree.java:381) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.query.parser.PartTree.<init>(PartTree.java:93) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:76) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:103) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:208) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:79) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lookupQuery(RepositoryFactorySupport.java:565) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(RepositoryFactorySupport.java:558) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193) ~[?:1.8.0_60]
+	at java.util.Iterator.forEachRemaining(Iterator.java:116) ~[?:1.8.0_60]
+	at java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1049) ~[?:1.8.0_60]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) ~[?:1.8.0_60]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481) ~[?:1.8.0_60]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471) ~[?:1.8.0_60]
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708) ~[?:1.8.0_60]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:1.8.0_60]
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499) ~[?:1.8.0_60]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.mapMethodsToQuery(RepositoryFactorySupport.java:560) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$new$0(RepositoryFactorySupport.java:550) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at java.util.Optional.map(Optional.java:215) ~[?:1.8.0_60]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.<init>(RepositoryFactorySupport.java:550) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:323) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$4(RepositoryFactoryBeanSupport.java:290) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:141) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.util.Lazy.get(Lazy.java:63) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:293) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:102) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1753) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1690) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:514) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:485) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:619) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:514) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:485) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:619) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	... 22 more
+
+2018.10.31 13:43:06.892 [restartedMain] INFO [org.springframework.boot.StartupInfoLogger.logStarting:50] - Starting OfmApplication on iotcomm-001-PC with PID 9116 (D:\WorkSpeace\gitSpeace\SpringBootStudy\target\classes started by iotcomm-001 in D:\WorkSpeace\gitSpeace\SpringBootStudy)
+2018.10.31 13:43:06.892 [restartedMain] INFO [org.springframework.boot.SpringApplication.logStartupProfileInfo:654] - No active profile set, falling back to default profiles: default
+2018.10.31 13:43:06.893 [restartedMain] INFO [org.springframework.context.support.AbstractApplicationContext.prepareRefresh:588] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6d62f966: startup date [Wed Oct 31 13:43:06 CST 2018]; root of context hierarchy
+2018.10.31 13:43:07.091 [restartedMain] INFO [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:326] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$46bbcbcf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018.10.31 13:43:07.144 [restartedMain] INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:91] - Tomcat initialized with port(s): 8080 (http)
+2018.10.31 13:43:07.145 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Initializing ProtocolHandler ["http-nio-8080"]
+2018.10.31 13:43:07.145 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Starting service [Tomcat]
+2018.10.31 13:43:07.145 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018.10.31 13:43:07.154 [localhost-startStop-1] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Initializing Spring embedded WebApplicationContext
+2018.10.31 13:43:07.154 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:285] - Root WebApplicationContext: initialization completed in 261 ms
+2018.10.31 13:43:07.171 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018.10.31 13:43:07.171 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018.10.31 13:43:07.171 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018.10.31 13:43:07.171 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'requestContextFilter' to: [/*]
+2018.10.31 13:43:07.171 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:258] - Mapping filter: 'RequestIPFilter' to urls: [/*]
+2018.10.31 13:43:07.171 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'remoteIpFilter' to: [/*]
+2018.10.31 13:43:07.171 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.ServletRegistrationBean.addRegistration:187] - Servlet dispatcherServlet mapped to [/]
+2018.10.31 13:43:07.196 [restartedMain] INFO [com.zaxxer.hikari.HikariDataSource.getConnection:110] - HikariPool-4 - Starting...
+2018.10.31 13:43:07.440 [restartedMain] INFO [com.zaxxer.hikari.HikariDataSource.getConnection:123] - HikariPool-4 - Start completed.
+2018.10.31 13:43:07.446 [restartedMain] INFO [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory:361] - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018.10.31 13:43:07.456 [restartedMain] INFO [org.hibernate.dialect.Dialect.<init>:157] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2018.10.31 13:43:07.549 [restartedMain] INFO [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory:415] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018.10.31 13:43:07.622 [restartedMain] INFO [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService:47] - HHH000397: Using ASTQueryTranslatorFactory
+2018.10.31 13:43:07.725 [restartedMain] ERROR [org.hibernate.hql.internal.ast.ErrorCounter.reportError:60] - line 1:8: expecting "into", found 'i'
+2018.10.31 13:43:07.726 [restartedMain] ERROR [org.hibernate.hql.internal.ast.ErrorCounter.reportError:55] - line 1:8: expecting "into", found 'i' antlr.MismatchedTokenException: expecting "into", found 'i'
+	at antlr.Parser.match(Parser.java:211) ~[antlr-2.7.7.jar:?]
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.intoClause(HqlBaseParser.java:829) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.insertStatement(HqlBaseParser.java:349) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:204) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:284) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:186) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:141) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:115) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:77) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:153) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:553) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:662) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:23) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_60]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_60]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_60]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_60]
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:350) ~[spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at com.sun.proxy.$Proxy128.createQuery(Unknown Source) ~[?:?]
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.validateQuery(SimpleJpaQuery.java:87) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.<init>(SimpleJpaQuery.java:63) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.jpa.repository.query.JpaQueryFactory.fromMethodWithQueryString(JpaQueryFactory.java:76) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.jpa.repository.query.JpaQueryFactory.fromQueryAnnotation(JpaQueryFactory.java:56) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$DeclaredQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:139) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:206) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:79) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lookupQuery(RepositoryFactorySupport.java:565) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(RepositoryFactorySupport.java:558) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193) ~[?:1.8.0_60]
+	at java.util.Iterator.forEachRemaining(Iterator.java:116) ~[?:1.8.0_60]
+	at java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1049) ~[?:1.8.0_60]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) ~[?:1.8.0_60]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481) ~[?:1.8.0_60]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471) ~[?:1.8.0_60]
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708) ~[?:1.8.0_60]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:1.8.0_60]
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499) ~[?:1.8.0_60]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.mapMethodsToQuery(RepositoryFactorySupport.java:560) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$new$0(RepositoryFactorySupport.java:550) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at java.util.Optional.map(Optional.java:215) ~[?:1.8.0_60]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.<init>(RepositoryFactorySupport.java:550) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:323) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$4(RepositoryFactoryBeanSupport.java:290) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:141) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.util.Lazy.get(Lazy.java:63) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:293) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:102) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1753) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1690) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:514) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:485) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:619) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:514) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:485) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:619) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) [spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:548) [spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at com.sakura.ofm.OfmApplication.main(OfmApplication.java:10) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_60]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_60]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_60]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_60]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+
+2018.10.31 13:43:07.781 [restartedMain] WARN [org.springframework.context.support.AbstractApplicationContext.refresh:556] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'blogController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ofmBlogService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'blogRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract int com.sakura.ofm.dao.BlogRepository.insertBlog()!
+2018.10.31 13:43:07.782 [restartedMain] INFO [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy:597] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018.10.31 13:43:07.783 [restartedMain] INFO [com.zaxxer.hikari.HikariDataSource.close:381] - HikariPool-4 - Shutdown initiated...
+2018.10.31 13:43:07.785 [restartedMain] INFO [com.zaxxer.hikari.HikariDataSource.close:383] - HikariPool-4 - Shutdown completed.
+2018.10.31 13:43:07.786 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Stopping service [Tomcat]
+2018.10.31 13:43:07.802 [restartedMain] ERROR [org.springframework.boot.SpringApplication.reportFailure:837] - Application run failed org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'blogController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ofmBlogService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'blogRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract int com.sakura.ofm.dao.BlogRepository.insertBlog()!
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:321) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:548) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at com.sakura.ofm.OfmApplication.main(OfmApplication.java:10) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_60]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_60]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_60]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_60]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ofmBlogService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'blogRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract int com.sakura.ofm.dao.BlogRepository.insertBlog()!
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:321) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:514) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:485) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:619) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	... 22 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'blogRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract int com.sakura.ofm.dao.BlogRepository.insertBlog()!
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1694) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:514) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:485) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:619) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:514) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:485) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:619) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	... 22 more
+Caused by: java.lang.IllegalArgumentException: Validation failed for query for method public abstract int com.sakura.ofm.dao.BlogRepository.insertBlog()!
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.validateQuery(SimpleJpaQuery.java:93) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.<init>(SimpleJpaQuery.java:63) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.jpa.repository.query.JpaQueryFactory.fromMethodWithQueryString(JpaQueryFactory.java:76) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.jpa.repository.query.JpaQueryFactory.fromQueryAnnotation(JpaQueryFactory.java:56) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$DeclaredQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:139) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:206) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:79) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lookupQuery(RepositoryFactorySupport.java:565) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(RepositoryFactorySupport.java:558) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193) ~[?:1.8.0_60]
+	at java.util.Iterator.forEachRemaining(Iterator.java:116) ~[?:1.8.0_60]
+	at java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1049) ~[?:1.8.0_60]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) ~[?:1.8.0_60]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481) ~[?:1.8.0_60]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471) ~[?:1.8.0_60]
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708) ~[?:1.8.0_60]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:1.8.0_60]
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499) ~[?:1.8.0_60]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.mapMethodsToQuery(RepositoryFactorySupport.java:560) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$new$0(RepositoryFactorySupport.java:550) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at java.util.Optional.map(Optional.java:215) ~[?:1.8.0_60]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.<init>(RepositoryFactorySupport.java:550) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:323) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$4(RepositoryFactoryBeanSupport.java:290) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:141) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.util.Lazy.get(Lazy.java:63) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:293) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:102) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1753) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1690) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:514) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:485) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:619) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:514) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:485) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:619) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	... 22 more
+Caused by: java.lang.IllegalArgumentException: org.hibernate.hql.internal.ast.QuerySyntaxException: expecting "into", found 'i' near line 1, column 8 [insert i]
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:133) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:157) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:164) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:670) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:23) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_60]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_60]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_60]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_60]
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:350) ~[spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at com.sun.proxy.$Proxy128.createQuery(Unknown Source) ~[?:?]
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.validateQuery(SimpleJpaQuery.java:87) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.<init>(SimpleJpaQuery.java:63) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.jpa.repository.query.JpaQueryFactory.fromMethodWithQueryString(JpaQueryFactory.java:76) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.jpa.repository.query.JpaQueryFactory.fromQueryAnnotation(JpaQueryFactory.java:56) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$DeclaredQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:139) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:206) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:79) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lookupQuery(RepositoryFactorySupport.java:565) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(RepositoryFactorySupport.java:558) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193) ~[?:1.8.0_60]
+	at java.util.Iterator.forEachRemaining(Iterator.java:116) ~[?:1.8.0_60]
+	at java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1049) ~[?:1.8.0_60]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) ~[?:1.8.0_60]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481) ~[?:1.8.0_60]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471) ~[?:1.8.0_60]
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708) ~[?:1.8.0_60]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:1.8.0_60]
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499) ~[?:1.8.0_60]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.mapMethodsToQuery(RepositoryFactorySupport.java:560) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$new$0(RepositoryFactorySupport.java:550) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at java.util.Optional.map(Optional.java:215) ~[?:1.8.0_60]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.<init>(RepositoryFactorySupport.java:550) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:323) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$4(RepositoryFactoryBeanSupport.java:290) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:141) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.util.Lazy.get(Lazy.java:63) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:293) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:102) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1753) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1690) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:514) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:485) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:619) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:514) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:485) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:619) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	... 22 more
+Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: expecting "into", found 'i' near line 1, column 8 [insert i]
+	at org.hibernate.hql.internal.ast.QuerySyntaxException.convert(QuerySyntaxException.java:74) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.hql.internal.ast.ErrorCounter.throwQueryException(ErrorCounter.java:91) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:291) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:186) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:141) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:115) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:77) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:153) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:553) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:662) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:23) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_60]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_60]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_60]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_60]
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:350) ~[spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at com.sun.proxy.$Proxy128.createQuery(Unknown Source) ~[?:?]
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.validateQuery(SimpleJpaQuery.java:87) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.<init>(SimpleJpaQuery.java:63) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.jpa.repository.query.JpaQueryFactory.fromMethodWithQueryString(JpaQueryFactory.java:76) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.jpa.repository.query.JpaQueryFactory.fromQueryAnnotation(JpaQueryFactory.java:56) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$DeclaredQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:139) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:206) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:79) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lookupQuery(RepositoryFactorySupport.java:565) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(RepositoryFactorySupport.java:558) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193) ~[?:1.8.0_60]
+	at java.util.Iterator.forEachRemaining(Iterator.java:116) ~[?:1.8.0_60]
+	at java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1049) ~[?:1.8.0_60]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) ~[?:1.8.0_60]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481) ~[?:1.8.0_60]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471) ~[?:1.8.0_60]
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708) ~[?:1.8.0_60]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:1.8.0_60]
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499) ~[?:1.8.0_60]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.mapMethodsToQuery(RepositoryFactorySupport.java:560) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$new$0(RepositoryFactorySupport.java:550) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at java.util.Optional.map(Optional.java:215) ~[?:1.8.0_60]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.<init>(RepositoryFactorySupport.java:550) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:323) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$4(RepositoryFactoryBeanSupport.java:290) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:141) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.util.Lazy.get(Lazy.java:63) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:293) ~[spring-data-commons-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:102) ~[spring-data-jpa-2.0.11.RELEASE.jar:2.0.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1753) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1690) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:514) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:485) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:619) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:514) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:485) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:619) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	... 22 more
+
+2018.10.31 13:47:49.901 [restartedMain] INFO [org.springframework.boot.StartupInfoLogger.logStarting:50] - Starting OfmApplication on iotcomm-001-PC with PID 9116 (D:\WorkSpeace\gitSpeace\SpringBootStudy\target\classes started by iotcomm-001 in D:\WorkSpeace\gitSpeace\SpringBootStudy)
+2018.10.31 13:47:49.902 [restartedMain] INFO [org.springframework.boot.SpringApplication.logStartupProfileInfo:654] - No active profile set, falling back to default profiles: default
+2018.10.31 13:47:49.903 [restartedMain] INFO [org.springframework.context.support.AbstractApplicationContext.prepareRefresh:588] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5faae8d1: startup date [Wed Oct 31 13:47:49 CST 2018]; root of context hierarchy
+2018.10.31 13:47:50.147 [restartedMain] INFO [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:326] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$46bbcbcf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018.10.31 13:47:50.205 [restartedMain] INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:91] - Tomcat initialized with port(s): 8080 (http)
+2018.10.31 13:47:50.205 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Initializing ProtocolHandler ["http-nio-8080"]
+2018.10.31 13:47:50.206 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Starting service [Tomcat]
+2018.10.31 13:47:50.206 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018.10.31 13:47:50.241 [localhost-startStop-1] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Initializing Spring embedded WebApplicationContext
+2018.10.31 13:47:50.241 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:285] - Root WebApplicationContext: initialization completed in 338 ms
+2018.10.31 13:47:50.256 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018.10.31 13:47:50.256 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018.10.31 13:47:50.256 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018.10.31 13:47:50.256 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'requestContextFilter' to: [/*]
+2018.10.31 13:47:50.256 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:258] - Mapping filter: 'RequestIPFilter' to urls: [/*]
+2018.10.31 13:47:50.256 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'remoteIpFilter' to: [/*]
+2018.10.31 13:47:50.256 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.ServletRegistrationBean.addRegistration:187] - Servlet dispatcherServlet mapped to [/]
+2018.10.31 13:47:50.292 [restartedMain] INFO [com.zaxxer.hikari.HikariDataSource.getConnection:110] - HikariPool-5 - Starting...
+2018.10.31 13:47:50.514 [restartedMain] INFO [com.zaxxer.hikari.HikariDataSource.getConnection:123] - HikariPool-5 - Start completed.
+2018.10.31 13:47:50.518 [restartedMain] INFO [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory:361] - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018.10.31 13:47:50.524 [restartedMain] INFO [org.hibernate.dialect.Dialect.<init>:157] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2018.10.31 13:47:50.601 [restartedMain] INFO [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory:415] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018.10.31 13:47:50.653 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler:373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018.10.31 13:47:50.694 [restartedMain] INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache:588] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5faae8d1: startup date [Wed Oct 31 13:47:49 CST 2018]; root of context hierarchy
+2018.10.31 13:47:50.699 [restartedMain] WARN [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor:237] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018.10.31 13:47:50.702 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/blog/article]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.BlogController.articleView(java.lang.String,java.lang.Long)
+2018.10.31 13:47:50.703 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/blog/bloglist]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.BlogController.blogList(java.lang.String,int)
+2018.10.31 13:47:50.703 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/blog/saveBlog]}" onto public java.lang.Object com.sakura.ofm.controller.BlogController.saveBlog(java.lang.String,java.lang.String,java.lang.String)
+2018.10.31 13:47:50.703 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.DefaultController.index(java.lang.String)
+2018.10.31 13:47:50.703 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/write]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.DefaultController.write(java.lang.String)
+2018.10.31 13:47:50.704 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/hello]}" onto public java.lang.String com.sakura.ofm.controller.HelloWorldController.index()
+2018.10.31 13:47:50.704 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/cn],methods=[GET]}" onto public java.lang.String com.sakura.ofm.controller.HelloWorldController.cn(java.lang.String)
+2018.10.31 13:47:50.704 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/upload],methods=[POST]}" onto public java.lang.String com.sakura.ofm.controller.HelloWorldController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest)
+2018.10.31 13:47:50.705 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/sakura]}" onto public java.lang.String com.sakura.ofm.controller.HelloWorldController.sakura()
+2018.10.31 13:47:50.706 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018.10.31 13:47:50.706 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018.10.31 13:47:50.714 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler:373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018.10.31 13:47:50.714 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler:373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018.10.31 13:47:50.729 [restartedMain] WARN [org.thymeleaf.templatemode.TemplateMode.parse:150] - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018.10.31 13:47:50.735 [restartedMain] INFO [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>:61] - Adding welcome page template: index
+2018.10.31 13:47:50.770 [restartedMain] INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:57] - LiveReload server is running on port 35729
+2018.10.31 13:47:50.785 [restartedMain] INFO [org.springframework.jmx.export.MBeanExporter.afterSingletonsInstantiated:433] - Registering beans for JMX exposure on startup
+2018.10.31 13:47:50.786 [restartedMain] INFO [org.springframework.jmx.export.MBeanExporter.autodetect:895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018.10.31 13:47:50.790 [restartedMain] INFO [org.springframework.jmx.export.MBeanExporter.registerBeanInstance:668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018.10.31 13:47:50.797 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Starting ProtocolHandler ["http-nio-8080"]
+2018.10.31 13:47:50.798 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Using a shared selector for servlet write/read
+2018.10.31 13:47:50.819 [restartedMain] INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:206] - Tomcat started on port(s): 8080 (http) with context path '/ofm'
+2018.10.31 13:47:50.820 [restartedMain] INFO [org.springframework.boot.StartupInfoLogger.logStarted:59] - Started OfmApplication in 1.001 seconds (JVM running for 9773.422)
+2018.10.31 13:47:50.821 [restartedMain] INFO [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener.onApplicationEvent:56] - Condition evaluation unchanged
+2018.10.31 13:56:42.404 [http-nio-8080-exec-2] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018.10.31 13:56:42.404 [http-nio-8080-exec-2] INFO [org.springframework.web.servlet.FrameworkServlet.initServletBean:494] - FrameworkServlet 'dispatcherServlet': initialization started
+2018.10.31 13:56:42.408 [http-nio-8080-exec-2] INFO [org.springframework.web.servlet.FrameworkServlet.initServletBean:509] - FrameworkServlet 'dispatcherServlet': initialization completed in 4 ms
+2018.10.31 13:56:42.409 [http-nio-8080-exec-2] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/
+2018.10.31 13:56:46.279 [http-nio-8080-exec-6] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/write
+2018.10.31 13:56:46.297 [http-nio-8080-exec-10] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/js/write/wangEditor.min.js
+2018.10.31 13:57:07.409 [http-nio-8080-exec-7] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/blog/saveblog
+2018.10.31 13:57:08.365 [http-nio-8080-exec-1] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/blog/saveblog
+2018.10.31 13:57:08.816 [http-nio-8080-exec-5] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/blog/saveblog
+2018.10.31 13:57:15.240 [http-nio-8080-exec-8] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/js/write/wangEditor.min.js.map
+2018.10.31 13:57:18.530 [http-nio-8080-exec-4] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/blog/saveblog
+2018.10.31 13:57:45.192 [Thread-27] INFO [org.springframework.context.support.AbstractApplicationContext.doClose:991] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5faae8d1: startup date [Wed Oct 31 13:47:49 CST 2018]; root of context hierarchy
+2018.10.31 13:57:45.193 [Thread-27] INFO [org.springframework.jmx.export.MBeanExporter.destroy:451] - Unregistering JMX-exposed beans on shutdown
+2018.10.31 13:57:45.193 [Thread-27] INFO [org.springframework.jmx.support.MBeanRegistrationSupport.unregisterBeans:185] - Unregistering JMX-exposed beans
+2018.10.31 13:57:45.194 [Thread-27] INFO [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy:597] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018.10.31 13:57:45.194 [Thread-27] INFO [com.zaxxer.hikari.HikariDataSource.close:381] - HikariPool-5 - Shutdown initiated...
+2018.10.31 13:57:45.196 [Thread-27] INFO [com.zaxxer.hikari.HikariDataSource.close:383] - HikariPool-5 - Shutdown completed.
+2018.10.31 13:57:45.497 [restartedMain] INFO [org.springframework.boot.StartupInfoLogger.logStarting:50] - Starting OfmApplication on iotcomm-001-PC with PID 9116 (D:\WorkSpeace\gitSpeace\SpringBootStudy\target\classes started by iotcomm-001 in D:\WorkSpeace\gitSpeace\SpringBootStudy)
+2018.10.31 13:57:45.497 [restartedMain] INFO [org.springframework.boot.SpringApplication.logStartupProfileInfo:654] - No active profile set, falling back to default profiles: default
+2018.10.31 13:57:45.498 [restartedMain] INFO [org.springframework.context.support.AbstractApplicationContext.prepareRefresh:588] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@54691fb7: startup date [Wed Oct 31 13:57:45 CST 2018]; root of context hierarchy
+2018.10.31 13:57:45.685 [restartedMain] INFO [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:326] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$46bbcbcf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018.10.31 13:57:45.734 [restartedMain] INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:91] - Tomcat initialized with port(s): 8080 (http)
+2018.10.31 13:57:45.734 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Initializing ProtocolHandler ["http-nio-8080"]
+2018.10.31 13:57:45.735 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Starting service [Tomcat]
+2018.10.31 13:57:45.735 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018.10.31 13:57:45.741 [localhost-startStop-1] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Initializing Spring embedded WebApplicationContext
+2018.10.31 13:57:45.742 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:285] - Root WebApplicationContext: initialization completed in 244 ms
+2018.10.31 13:57:45.756 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018.10.31 13:57:45.756 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018.10.31 13:57:45.756 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018.10.31 13:57:45.756 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'requestContextFilter' to: [/*]
+2018.10.31 13:57:45.756 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:258] - Mapping filter: 'RequestIPFilter' to urls: [/*]
+2018.10.31 13:57:45.756 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'remoteIpFilter' to: [/*]
+2018.10.31 13:57:45.757 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.ServletRegistrationBean.addRegistration:187] - Servlet dispatcherServlet mapped to [/]
+2018.10.31 13:57:45.780 [restartedMain] INFO [com.zaxxer.hikari.HikariDataSource.getConnection:110] - HikariPool-6 - Starting...
+2018.10.31 13:57:46.016 [restartedMain] INFO [com.zaxxer.hikari.HikariDataSource.getConnection:123] - HikariPool-6 - Start completed.
+2018.10.31 13:57:46.023 [restartedMain] INFO [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory:361] - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018.10.31 13:57:46.034 [restartedMain] INFO [org.hibernate.dialect.Dialect.<init>:157] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2018.10.31 13:57:46.126 [restartedMain] INFO [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory:415] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018.10.31 13:57:46.197 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler:373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018.10.31 13:57:46.263 [restartedMain] INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache:588] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@54691fb7: startup date [Wed Oct 31 13:57:45 CST 2018]; root of context hierarchy
+2018.10.31 13:57:46.270 [restartedMain] WARN [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor:237] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018.10.31 13:57:46.274 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/blog/article]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.BlogController.articleView(java.lang.String,java.lang.Long)
+2018.10.31 13:57:46.274 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/blog/bloglist]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.BlogController.blogList(java.lang.String,int)
+2018.10.31 13:57:46.274 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/blog/saveBlog]}" onto public java.lang.Object com.sakura.ofm.controller.BlogController.saveBlog(java.lang.String,java.lang.String,java.lang.String)
+2018.10.31 13:57:46.274 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.DefaultController.index(java.lang.String)
+2018.10.31 13:57:46.275 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/write]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.DefaultController.write(java.lang.String)
+2018.10.31 13:57:46.275 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/hello]}" onto public java.lang.String com.sakura.ofm.controller.HelloWorldController.index()
+2018.10.31 13:57:46.275 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/cn],methods=[GET]}" onto public java.lang.String com.sakura.ofm.controller.HelloWorldController.cn(java.lang.String)
+2018.10.31 13:57:46.275 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/upload],methods=[POST]}" onto public java.lang.String com.sakura.ofm.controller.HelloWorldController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest)
+2018.10.31 13:57:46.276 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/sakura]}" onto public java.lang.String com.sakura.ofm.controller.HelloWorldController.sakura()
+2018.10.31 13:57:46.277 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018.10.31 13:57:46.277 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018.10.31 13:57:46.284 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler:373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018.10.31 13:57:46.284 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler:373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018.10.31 13:57:46.295 [restartedMain] WARN [org.thymeleaf.templatemode.TemplateMode.parse:150] - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018.10.31 13:57:46.299 [restartedMain] INFO [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>:61] - Adding welcome page template: index
+2018.10.31 13:57:46.325 [restartedMain] INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:57] - LiveReload server is running on port 35729
+2018.10.31 13:57:46.338 [restartedMain] INFO [org.springframework.jmx.export.MBeanExporter.afterSingletonsInstantiated:433] - Registering beans for JMX exposure on startup
+2018.10.31 13:57:46.338 [restartedMain] INFO [org.springframework.jmx.export.MBeanExporter.autodetect:895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018.10.31 13:57:46.340 [restartedMain] INFO [org.springframework.jmx.export.MBeanExporter.registerBeanInstance:668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018.10.31 13:57:46.345 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Starting ProtocolHandler ["http-nio-8080"]
+2018.10.31 13:57:46.346 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Using a shared selector for servlet write/read
+2018.10.31 13:57:46.348 [restartedMain] INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:206] - Tomcat started on port(s): 8080 (http) with context path '/ofm'
+2018.10.31 13:57:46.349 [restartedMain] INFO [org.springframework.boot.StartupInfoLogger.logStarted:59] - Started OfmApplication in 0.876 seconds (JVM running for 10368.919)
+2018.10.31 13:57:46.350 [restartedMain] INFO [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener.onApplicationEvent:56] - Condition evaluation unchanged
+2018.10.31 13:57:51.218 [http-nio-8080-exec-1] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018.10.31 13:57:51.218 [http-nio-8080-exec-1] INFO [org.springframework.web.servlet.FrameworkServlet.initServletBean:494] - FrameworkServlet 'dispatcherServlet': initialization started
+2018.10.31 13:57:51.227 [http-nio-8080-exec-1] INFO [org.springframework.web.servlet.FrameworkServlet.initServletBean:509] - FrameworkServlet 'dispatcherServlet': initialization completed in 9 ms
+2018.10.31 13:57:51.237 [http-nio-8080-exec-1] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/blog/saveblog
+2018.10.31 13:58:05.911 [http-nio-8080-exec-2] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/blog/saveblog
+2018.10.31 13:58:37.063 [Thread-41] INFO [org.springframework.context.support.AbstractApplicationContext.doClose:991] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@54691fb7: startup date [Wed Oct 31 13:57:45 CST 2018]; root of context hierarchy
+2018.10.31 13:58:37.065 [Thread-41] INFO [org.springframework.jmx.export.MBeanExporter.destroy:451] - Unregistering JMX-exposed beans on shutdown
+2018.10.31 13:58:37.066 [Thread-41] INFO [org.springframework.jmx.support.MBeanRegistrationSupport.unregisterBeans:185] - Unregistering JMX-exposed beans
+2018.10.31 13:58:37.066 [Thread-41] INFO [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy:597] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018.10.31 13:58:37.067 [Thread-41] INFO [com.zaxxer.hikari.HikariDataSource.close:381] - HikariPool-6 - Shutdown initiated...
+2018.10.31 13:58:37.073 [Thread-41] INFO [com.zaxxer.hikari.HikariDataSource.close:383] - HikariPool-6 - Shutdown completed.
+2018.10.31 13:58:37.298 [restartedMain] INFO [org.springframework.boot.StartupInfoLogger.logStarting:50] - Starting OfmApplication on iotcomm-001-PC with PID 9116 (D:\WorkSpeace\gitSpeace\SpringBootStudy\target\classes started by iotcomm-001 in D:\WorkSpeace\gitSpeace\SpringBootStudy)
+2018.10.31 13:58:37.299 [restartedMain] INFO [org.springframework.boot.SpringApplication.logStartupProfileInfo:654] - No active profile set, falling back to default profiles: default
+2018.10.31 13:58:37.300 [restartedMain] INFO [org.springframework.context.support.AbstractApplicationContext.prepareRefresh:588] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@531c443: startup date [Wed Oct 31 13:58:37 CST 2018]; root of context hierarchy
+2018.10.31 13:58:37.490 [restartedMain] INFO [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:326] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$46bbcbcf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018.10.31 13:58:37.541 [restartedMain] INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:91] - Tomcat initialized with port(s): 8080 (http)
+2018.10.31 13:58:37.542 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Initializing ProtocolHandler ["http-nio-8080"]
+2018.10.31 13:58:37.542 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Starting service [Tomcat]
+2018.10.31 13:58:37.542 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018.10.31 13:58:37.549 [localhost-startStop-1] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Initializing Spring embedded WebApplicationContext
+2018.10.31 13:58:37.549 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:285] - Root WebApplicationContext: initialization completed in 249 ms
+2018.10.31 13:58:37.564 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018.10.31 13:58:37.564 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018.10.31 13:58:37.564 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018.10.31 13:58:37.564 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'requestContextFilter' to: [/*]
+2018.10.31 13:58:37.564 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:258] - Mapping filter: 'RequestIPFilter' to urls: [/*]
+2018.10.31 13:58:37.564 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'remoteIpFilter' to: [/*]
+2018.10.31 13:58:37.564 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.ServletRegistrationBean.addRegistration:187] - Servlet dispatcherServlet mapped to [/]
+2018.10.31 13:58:37.587 [restartedMain] INFO [com.zaxxer.hikari.HikariDataSource.getConnection:110] - HikariPool-7 - Starting...
+2018.10.31 13:58:37.832 [restartedMain] INFO [com.zaxxer.hikari.HikariDataSource.getConnection:123] - HikariPool-7 - Start completed.
+2018.10.31 13:58:37.837 [restartedMain] INFO [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory:361] - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018.10.31 13:58:37.842 [restartedMain] INFO [org.hibernate.dialect.Dialect.<init>:157] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2018.10.31 13:58:37.927 [restartedMain] INFO [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory:415] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018.10.31 13:58:37.964 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler:373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018.10.31 13:58:38.006 [restartedMain] INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache:588] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@531c443: startup date [Wed Oct 31 13:58:37 CST 2018]; root of context hierarchy
+2018.10.31 13:58:38.009 [restartedMain] WARN [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor:237] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018.10.31 13:58:38.012 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/blog/article]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.BlogController.articleView(java.lang.String,java.lang.Long)
+2018.10.31 13:58:38.012 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/blog/bloglist]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.BlogController.blogList(java.lang.String,int)
+2018.10.31 13:58:38.013 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/blog/saveblog]}" onto public java.lang.Object com.sakura.ofm.controller.BlogController.saveBlog(java.lang.String,java.lang.String,java.lang.String)
+2018.10.31 13:58:38.013 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.DefaultController.index(java.lang.String)
+2018.10.31 13:58:38.013 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/write]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.DefaultController.write(java.lang.String)
+2018.10.31 13:58:38.014 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/hello]}" onto public java.lang.String com.sakura.ofm.controller.HelloWorldController.index()
+2018.10.31 13:58:38.014 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/cn],methods=[GET]}" onto public java.lang.String com.sakura.ofm.controller.HelloWorldController.cn(java.lang.String)
+2018.10.31 13:58:38.015 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/upload],methods=[POST]}" onto public java.lang.String com.sakura.ofm.controller.HelloWorldController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest)
+2018.10.31 13:58:38.015 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/sakura]}" onto public java.lang.String com.sakura.ofm.controller.HelloWorldController.sakura()
+2018.10.31 13:58:38.016 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018.10.31 13:58:38.016 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018.10.31 13:58:38.024 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler:373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018.10.31 13:58:38.024 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler:373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018.10.31 13:58:38.036 [restartedMain] WARN [org.thymeleaf.templatemode.TemplateMode.parse:150] - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018.10.31 13:58:38.042 [restartedMain] INFO [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>:61] - Adding welcome page template: index
+2018.10.31 13:58:38.073 [restartedMain] INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:57] - LiveReload server is running on port 35729
+2018.10.31 13:58:38.087 [restartedMain] INFO [org.springframework.jmx.export.MBeanExporter.afterSingletonsInstantiated:433] - Registering beans for JMX exposure on startup
+2018.10.31 13:58:38.088 [restartedMain] INFO [org.springframework.jmx.export.MBeanExporter.autodetect:895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018.10.31 13:58:38.091 [restartedMain] INFO [org.springframework.jmx.export.MBeanExporter.registerBeanInstance:668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018.10.31 13:58:38.097 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Starting ProtocolHandler ["http-nio-8080"]
+2018.10.31 13:58:38.097 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Using a shared selector for servlet write/read
+2018.10.31 13:58:38.100 [restartedMain] INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:206] - Tomcat started on port(s): 8080 (http) with context path '/ofm'
+2018.10.31 13:58:38.100 [restartedMain] INFO [org.springframework.boot.StartupInfoLogger.logStarted:59] - Started OfmApplication in 0.823 seconds (JVM running for 10420.667)
+2018.10.31 13:58:38.103 [restartedMain] INFO [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener.onApplicationEvent:56] - Condition evaluation unchanged
+2018.10.31 13:58:43.694 [http-nio-8080-exec-1] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018.10.31 13:58:43.694 [http-nio-8080-exec-1] INFO [org.springframework.web.servlet.FrameworkServlet.initServletBean:494] - FrameworkServlet 'dispatcherServlet': initialization started
+2018.10.31 13:58:43.697 [http-nio-8080-exec-1] INFO [org.springframework.web.servlet.FrameworkServlet.initServletBean:509] - FrameworkServlet 'dispatcherServlet': initialization completed in 3 ms
+2018.10.31 13:58:43.708 [http-nio-8080-exec-1] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/blog/saveblog

@@ -1,0 +1,413 @@
+2018.11.05 18:02:08.378 [restartedMain] INFO [org.springframework.boot.StartupInfoLogger.logStarting:50] - Starting OfmApplication on iotcomm-001-PC with PID 8072 (D:\WorkSpeace\gitSpeace\SpringBootStudy\target\classes started by iotcomm-001 in D:\WorkSpeace\gitSpeace\SpringBootStudy)
+2018.11.05 18:02:08.393 [restartedMain] INFO [org.springframework.boot.SpringApplication.logStartupProfileInfo:654] - No active profile set, falling back to default profiles: default
+2018.11.05 18:02:08.418 [restartedMain] INFO [org.springframework.context.support.AbstractApplicationContext.prepareRefresh:588] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@345303a8: startup date [Mon Nov 05 18:02:08 CST 2018]; root of context hierarchy
+2018.11.05 18:02:09.188 [restartedMain] INFO [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:326] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$65f458fa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018.11.05 18:02:09.530 [restartedMain] INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:91] - Tomcat initialized with port(s): 8080 (http)
+2018.11.05 18:02:09.538 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Initializing ProtocolHandler ["http-nio-8080"]
+2018.11.05 18:02:09.545 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Starting service [Tomcat]
+2018.11.05 18:02:09.545 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018.11.05 18:02:09.548 [localhost-startStop-1] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_60\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files\Java\jdk1.8.0_60\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\install\VisualSVN Server\bin;D:\install\maven-3.3.9\bin;D:\install\TortoiseSVN\bin;E:\sonarqube\sonar-scanner-2.8\bin;D:\install\nexus-2.14\nexus-2.14.3-02\bin;%ERLANG_HOME%\bin;D:\install\RabbitMQ Server\rabbitmq_server-3.6.9\sbin;C:\Android;C:\Windows\System32;C:\Program Files\Git\cmd;C:\Users\iotcomm-001\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\iotcomm-001\AppData\Local\Programs\Python\Python37\;.]
+2018.11.05 18:02:09.601 [localhost-startStop-1] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Initializing Spring embedded WebApplicationContext
+2018.11.05 18:02:09.601 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:285] - Root WebApplicationContext: initialization completed in 1184 ms
+2018.11.05 18:02:09.652 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018.11.05 18:02:09.652 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018.11.05 18:02:09.652 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018.11.05 18:02:09.652 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'requestContextFilter' to: [/*]
+2018.11.05 18:02:09.652 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:258] - Mapping filter: 'RequestIPFilter' to urls: [/*]
+2018.11.05 18:02:09.653 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'remoteIpFilter' to: [/*]
+2018.11.05 18:02:09.653 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.ServletRegistrationBean.addRegistration:187] - Servlet dispatcherServlet mapped to [/]
+2018.11.05 18:02:09.807 [restartedMain] INFO [com.zaxxer.hikari.HikariDataSource.getConnection:110] - HikariPool-1 - Starting...
+2018.11.05 18:02:10.151 [restartedMain] INFO [com.zaxxer.hikari.HikariDataSource.getConnection:123] - HikariPool-1 - Start completed.
+2018.11.05 18:02:10.229 [restartedMain] INFO [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory:361] - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018.11.05 18:02:10.301 [restartedMain] INFO [org.hibernate.Version.logVersion:45] - HHH000412: Hibernate Core {5.2.17.Final}
+2018.11.05 18:02:10.302 [restartedMain] INFO [org.hibernate.cfg.Environment.<clinit>:213] - HHH000206: hibernate.properties not found
+2018.11.05 18:02:10.349 [restartedMain] INFO [org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>:66] - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018.11.05 18:02:10.433 [restartedMain] INFO [org.hibernate.dialect.Dialect.<init>:157] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2018.11.05 18:02:10.768 [restartedMain] INFO [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory:415] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018.11.05 18:02:11.042 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler:373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018.11.05 18:02:11.196 [restartedMain] INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache:588] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@345303a8: startup date [Mon Nov 05 18:02:08 CST 2018]; root of context hierarchy
+2018.11.05 18:02:11.214 [restartedMain] WARN [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor:237] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018.11.05 18:02:11.232 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/blog/bloglist]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.BlogController.blogList(java.lang.String,int)
+2018.11.05 18:02:11.233 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/blog/article]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.BlogController.articleView(java.lang.String,java.lang.Long)
+2018.11.05 18:02:11.233 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/blog/saveblog]}" onto public java.lang.Object com.sakura.ofm.controller.BlogController.saveBlog(java.lang.String,java.lang.String,java.lang.String)
+2018.11.05 18:02:11.233 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.DefaultController.index(java.lang.String)
+2018.11.05 18:02:11.234 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/write]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.DefaultController.write(java.lang.String)
+2018.11.05 18:02:11.234 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/resume]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.DefaultController.resume(java.lang.String)
+2018.11.05 18:02:11.234 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/login]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.DefaultController.login(java.lang.String)
+2018.11.05 18:02:11.236 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/hello]}" onto public java.lang.String com.sakura.ofm.controller.HelloWorldController.index()
+2018.11.05 18:02:11.236 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/cn],methods=[GET]}" onto public java.lang.String com.sakura.ofm.controller.HelloWorldController.cn(java.lang.String)
+2018.11.05 18:02:11.237 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/upload],methods=[POST]}" onto public java.lang.String com.sakura.ofm.controller.HelloWorldController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest)
+2018.11.05 18:02:11.237 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/sakura]}" onto public java.lang.String com.sakura.ofm.controller.HelloWorldController.sakura()
+2018.11.05 18:02:11.237 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/user/login]}" onto public java.lang.String com.sakura.ofm.controller.UserController.login(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018.11.05 18:02:11.240 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018.11.05 18:02:11.240 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018.11.05 18:02:11.260 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler:373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018.11.05 18:02:11.260 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler:373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018.11.05 18:02:11.297 [restartedMain] WARN [org.thymeleaf.templatemode.TemplateMode.parse:150] - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018.11.05 18:02:11.327 [restartedMain] INFO [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>:61] - Adding welcome page template: index
+2018.11.05 18:02:11.455 [restartedMain] INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:57] - LiveReload server is running on port 35729
+2018.11.05 18:02:11.476 [restartedMain] INFO [org.springframework.jmx.export.MBeanExporter.afterSingletonsInstantiated:433] - Registering beans for JMX exposure on startup
+2018.11.05 18:02:11.477 [restartedMain] INFO [org.springframework.jmx.export.MBeanExporter.autodetect:895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018.11.05 18:02:11.480 [restartedMain] INFO [org.springframework.jmx.export.MBeanExporter.registerBeanInstance:668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018.11.05 18:02:11.491 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Starting ProtocolHandler ["http-nio-8080"]
+2018.11.05 18:02:11.498 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Using a shared selector for servlet write/read
+2018.11.05 18:02:11.506 [restartedMain] INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:206] - Tomcat started on port(s): 8080 (http) with context path '/ofm'
+2018.11.05 18:02:11.508 [restartedMain] INFO [org.springframework.boot.StartupInfoLogger.logStarted:59] - Started OfmApplication in 3.335 seconds (JVM running for 4.273)
+2018.11.05 18:02:45.508 [http-nio-8080-exec-2] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018.11.05 18:02:45.509 [http-nio-8080-exec-2] INFO [org.springframework.web.servlet.FrameworkServlet.initServletBean:494] - FrameworkServlet 'dispatcherServlet': initialization started
+2018.11.05 18:02:45.525 [http-nio-8080-exec-2] INFO [org.springframework.web.servlet.FrameworkServlet.initServletBean:509] - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018.11.05 18:02:45.532 [http-nio-8080-exec-2] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/
+2018.11.05 18:02:45.746 [http-nio-8080-exec-2] INFO [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService:47] - HHH000397: Using ASTQueryTranslatorFactory
+2018.11.05 18:02:46.096 [http-nio-8080-exec-3] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/css/bootstrap.min.css
+2018.11.05 18:07:04.232 [Thread-13] INFO [org.springframework.context.support.AbstractApplicationContext.doClose:991] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@345303a8: startup date [Mon Nov 05 18:02:08 CST 2018]; root of context hierarchy
+2018.11.05 18:07:04.238 [Thread-13] INFO [org.springframework.jmx.export.MBeanExporter.destroy:451] - Unregistering JMX-exposed beans on shutdown
+2018.11.05 18:07:04.238 [Thread-13] INFO [org.springframework.jmx.support.MBeanRegistrationSupport.unregisterBeans:185] - Unregistering JMX-exposed beans
+2018.11.05 18:07:04.239 [Thread-13] INFO [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy:597] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018.11.05 18:07:04.241 [Thread-13] INFO [com.zaxxer.hikari.HikariDataSource.close:381] - HikariPool-1 - Shutdown initiated...
+2018.11.05 18:07:04.246 [Thread-13] INFO [com.zaxxer.hikari.HikariDataSource.close:383] - HikariPool-1 - Shutdown completed.
+2018.11.05 18:07:04.544 [restartedMain] INFO [org.springframework.boot.StartupInfoLogger.logStarting:50] - Starting OfmApplication on iotcomm-001-PC with PID 8072 (D:\WorkSpeace\gitSpeace\SpringBootStudy\target\classes started by iotcomm-001 in D:\WorkSpeace\gitSpeace\SpringBootStudy)
+2018.11.05 18:07:04.544 [restartedMain] INFO [org.springframework.boot.SpringApplication.logStartupProfileInfo:654] - No active profile set, falling back to default profiles: default
+2018.11.05 18:07:04.545 [restartedMain] INFO [org.springframework.context.support.AbstractApplicationContext.prepareRefresh:588] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2a004ba4: startup date [Mon Nov 05 18:07:04 CST 2018]; root of context hierarchy
+2018.11.05 18:07:04.748 [restartedMain] INFO [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:326] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$65f458fa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018.11.05 18:07:04.810 [restartedMain] INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:91] - Tomcat initialized with port(s): 8080 (http)
+2018.11.05 18:07:04.810 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Initializing ProtocolHandler ["http-nio-8080"]
+2018.11.05 18:07:04.811 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Starting service [Tomcat]
+2018.11.05 18:07:04.811 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018.11.05 18:07:04.823 [localhost-startStop-1] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Initializing Spring embedded WebApplicationContext
+2018.11.05 18:07:04.823 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:285] - Root WebApplicationContext: initialization completed in 278 ms
+2018.11.05 18:07:04.842 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018.11.05 18:07:04.843 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018.11.05 18:07:04.843 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018.11.05 18:07:04.843 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'requestContextFilter' to: [/*]
+2018.11.05 18:07:04.843 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:258] - Mapping filter: 'RequestIPFilter' to urls: [/*]
+2018.11.05 18:07:04.843 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'remoteIpFilter' to: [/*]
+2018.11.05 18:07:04.843 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.ServletRegistrationBean.addRegistration:187] - Servlet dispatcherServlet mapped to [/]
+2018.11.05 18:07:04.877 [restartedMain] INFO [com.zaxxer.hikari.HikariDataSource.getConnection:110] - HikariPool-2 - Starting...
+2018.11.05 18:07:05.120 [restartedMain] INFO [com.zaxxer.hikari.HikariDataSource.getConnection:123] - HikariPool-2 - Start completed.
+2018.11.05 18:07:05.124 [restartedMain] INFO [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory:361] - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018.11.05 18:07:05.132 [restartedMain] INFO [org.hibernate.dialect.Dialect.<init>:157] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2018.11.05 18:07:05.251 [restartedMain] INFO [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory:415] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018.11.05 18:07:05.320 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler:373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018.11.05 18:07:05.358 [restartedMain] INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache:588] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2a004ba4: startup date [Mon Nov 05 18:07:04 CST 2018]; root of context hierarchy
+2018.11.05 18:07:05.362 [restartedMain] WARN [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor:237] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018.11.05 18:07:05.365 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/blog/bloglist]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.BlogController.blogList(java.lang.String,int)
+2018.11.05 18:07:05.365 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/blog/article]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.BlogController.articleView(java.lang.String,java.lang.Long)
+2018.11.05 18:07:05.365 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/blog/saveblog]}" onto public java.lang.Object com.sakura.ofm.controller.BlogController.saveBlog(java.lang.String,java.lang.String,java.lang.String)
+2018.11.05 18:07:05.366 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.DefaultController.index(java.lang.String)
+2018.11.05 18:07:05.366 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/write]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.DefaultController.write(java.lang.String)
+2018.11.05 18:07:05.366 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/resume]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.DefaultController.resume(java.lang.String)
+2018.11.05 18:07:05.366 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/login]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.DefaultController.login(java.lang.String)
+2018.11.05 18:07:05.367 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/hello]}" onto public java.lang.String com.sakura.ofm.controller.HelloWorldController.index()
+2018.11.05 18:07:05.367 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/cn],methods=[GET]}" onto public java.lang.String com.sakura.ofm.controller.HelloWorldController.cn(java.lang.String)
+2018.11.05 18:07:05.368 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/upload],methods=[POST]}" onto public java.lang.String com.sakura.ofm.controller.HelloWorldController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest)
+2018.11.05 18:07:05.368 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/sakura]}" onto public java.lang.String com.sakura.ofm.controller.HelloWorldController.sakura()
+2018.11.05 18:07:05.368 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/user/login]}" onto public java.lang.String com.sakura.ofm.controller.UserController.login(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018.11.05 18:07:05.370 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018.11.05 18:07:05.370 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018.11.05 18:07:05.378 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler:373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018.11.05 18:07:05.378 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler:373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018.11.05 18:07:05.391 [restartedMain] WARN [org.thymeleaf.templatemode.TemplateMode.parse:150] - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018.11.05 18:07:05.397 [restartedMain] INFO [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>:61] - Adding welcome page template: index
+2018.11.05 18:07:05.429 [restartedMain] INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:57] - LiveReload server is running on port 35729
+2018.11.05 18:07:05.444 [restartedMain] INFO [org.springframework.jmx.export.MBeanExporter.afterSingletonsInstantiated:433] - Registering beans for JMX exposure on startup
+2018.11.05 18:07:05.445 [restartedMain] INFO [org.springframework.jmx.export.MBeanExporter.autodetect:895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018.11.05 18:07:05.447 [restartedMain] INFO [org.springframework.jmx.export.MBeanExporter.registerBeanInstance:668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018.11.05 18:07:05.455 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Starting ProtocolHandler ["http-nio-8080"]
+2018.11.05 18:07:05.456 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Using a shared selector for servlet write/read
+2018.11.05 18:07:05.459 [restartedMain] INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:206] - Tomcat started on port(s): 8080 (http) with context path '/ofm'
+2018.11.05 18:07:05.459 [restartedMain] INFO [org.springframework.boot.StartupInfoLogger.logStarted:59] - Started OfmApplication in 0.939 seconds (JVM running for 298.209)
+2018.11.05 18:07:05.461 [restartedMain] INFO [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener.onApplicationEvent:56] - Condition evaluation unchanged
+2018.11.05 18:07:13.129 [http-nio-8080-exec-1] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018.11.05 18:07:13.129 [http-nio-8080-exec-1] INFO [org.springframework.web.servlet.FrameworkServlet.initServletBean:494] - FrameworkServlet 'dispatcherServlet': initialization started
+2018.11.05 18:07:13.137 [http-nio-8080-exec-1] INFO [org.springframework.web.servlet.FrameworkServlet.initServletBean:509] - FrameworkServlet 'dispatcherServlet': initialization completed in 8 ms
+2018.11.05 18:07:13.138 [http-nio-8080-exec-1] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/blog/article
+2018.11.05 18:07:41.614 [http-nio-8080-exec-2] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/blog/article
+2018.11.05 18:07:52.688 [http-nio-8080-exec-5] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/blog/article
+2018.11.05 18:08:03.501 [http-nio-8080-exec-6] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/write
+2018.11.05 18:08:30.057 [http-nio-8080-exec-1] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/write
+2018.11.05 18:08:46.396 [http-nio-8080-exec-2] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/write
+2018.11.05 18:08:46.401 [http-nio-8080-exec-2] ERROR [org.thymeleaf.TemplateEngine.process:1136] - [THYMELEAF][http-nio-8080-exec-2] Exception processing template "write": An error happened during template parsing (template: "class path resource [templates/write.html]" - line 32, col 9) org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/write.html]" - line 32, col 9)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:239) ~[thymeleaf-3.0.10.RELEASE.jar:3.0.10.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.10.RELEASE.jar:3.0.10.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.10.RELEASE.jar:3.0.10.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) [thymeleaf-3.0.10.RELEASE.jar:3.0.10.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) [thymeleaf-3.0.10.RELEASE.jar:3.0.10.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362) [thymeleaf-spring5-3.0.10.RELEASE.jar:3.0.10.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189) [thymeleaf-spring5-3.0.10.RELEASE.jar:3.0.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325) [spring-webmvc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069) [spring-webmvc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008) [spring-webmvc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) [spring-webmvc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) [spring-webmvc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866) [spring-webmvc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) [spring-webmvc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.filters.RemoteIpFilter.doFilter(RemoteIpFilter.java:884) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.filters.RemoteIpFilter.doFilter(RemoteIpFilter.java:921) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at com.sakura.ofm.IpFilter$RequestIPFilter.doFilter(IpFilter.java:48) [classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) [spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_60]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_60]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_60]
+Caused by: org.attoparser.ParseException: (Line = 32, Column = 9) Incomplete structure: "<input id="title" type="text" style="width: 100%;height: 50px;border-left-width:0px;border-top-width:0px;border-right-width:0px;border-bottom-color:black;text-align: center;font-weight: 900;font-size: 2em; placeholder="请在此键入标题">
+    </div>
+
+    <div id="div1" class="toolbar" style="margin-left: 15%;margin-top: 50px;background: #eee">
+    </div>
+    <div id="div2" class="text" style="margin-left: 15%"> <!--可使用 min-height 实现编辑区域自动增加高度-->
+
+    </div>
+
+    <span id="submit" style="transition: 0.3s ease-in-out;border: 1px solid #3385ff;border-radius: 4px;background: #00B51D;box-shadow: inset 0px 1px 1px rgba(50,50,50,0.05);width: 10%;display: inline-block;margin-left: 45%; margin-top:30px;height: 35px;line-height: 35px;text-align: center;color: white">
+                                        提交
+                                    </span>
+
+    <!-- 注意， 只需要引用 JS，无需引用任何 CSS ！！！-->
+    <script type="text/javascript" src="js/write/wangEditor.min.js"></script>
+    <script type="text/javascript">
+        var E = window.wangEditor
+        var editor = new E('#div1', '#div2')
+        editor.customConfig.uploadImgShowBase64 = true   // 使用 base64 保存图片
+        editor.create()
+
+        document.getElementById('submit').addEventListener('click', function () {
+            var data ={"title":$("#title").val(),"content":editor.txt.html()}
+
+            $.ajax({
+                url:"blog/saveblog",
+                data:data,
+                type:"post",
+                success:function (result) {
+                    if (result.resultCode=="success"){
+                        window.location.href=result.successUrl;
+                    } else if (result.resultCode=="faill"){
+                        console.log(result.resultMessage);
+                    }
+                }
+            })
+
+        }, false)
+    </script>
+
+
+</body>
+</html>"
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:366) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.10.RELEASE.jar:3.0.10.RELEASE]
+	... 59 more
+
+2018.11.05 18:08:46.411 [http-nio-8080-exec-2] ERROR [org.apache.juli.logging.DirectJDKLog.log:182] - Servlet.service() for servlet [dispatcherServlet] in context with path [/ofm] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/write.html]" - line 32, col 9)] with root cause org.attoparser.ParseException: (Line = 32, Column = 9) Incomplete structure: "<input id="title" type="text" style="width: 100%;height: 50px;border-left-width:0px;border-top-width:0px;border-right-width:0px;border-bottom-color:black;text-align: center;font-weight: 900;font-size: 2em; placeholder="请在此键入标题">
+    </div>
+
+    <div id="div1" class="toolbar" style="margin-left: 15%;margin-top: 50px;background: #eee">
+    </div>
+    <div id="div2" class="text" style="margin-left: 15%"> <!--可使用 min-height 实现编辑区域自动增加高度-->
+
+    </div>
+
+    <span id="submit" style="transition: 0.3s ease-in-out;border: 1px solid #3385ff;border-radius: 4px;background: #00B51D;box-shadow: inset 0px 1px 1px rgba(50,50,50,0.05);width: 10%;display: inline-block;margin-left: 45%; margin-top:30px;height: 35px;line-height: 35px;text-align: center;color: white">
+                                        提交
+                                    </span>
+
+    <!-- 注意， 只需要引用 JS，无需引用任何 CSS ！！！-->
+    <script type="text/javascript" src="js/write/wangEditor.min.js"></script>
+    <script type="text/javascript">
+        var E = window.wangEditor
+        var editor = new E('#div1', '#div2')
+        editor.customConfig.uploadImgShowBase64 = true   // 使用 base64 保存图片
+        editor.create()
+
+        document.getElementById('submit').addEventListener('click', function () {
+            var data ={"title":$("#title").val(),"content":editor.txt.html()}
+
+            $.ajax({
+                url:"blog/saveblog",
+                data:data,
+                type:"post",
+                success:function (result) {
+                    if (result.resultCode=="success"){
+                        window.location.href=result.successUrl;
+                    } else if (result.resultCode=="faill"){
+                        console.log(result.resultMessage);
+                    }
+                }
+            })
+
+        }, false)
+    </script>
+
+
+</body>
+</html>"
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:366) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.10.RELEASE.jar:3.0.10.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.10.RELEASE.jar:3.0.10.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.10.RELEASE.jar:3.0.10.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.10.RELEASE.jar:3.0.10.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.10.RELEASE.jar:3.0.10.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362) ~[thymeleaf-spring5-3.0.10.RELEASE.jar:3.0.10.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189) ~[thymeleaf-spring5-3.0.10.RELEASE.jar:3.0.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325) ~[spring-webmvc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069) ~[spring-webmvc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008) ~[spring-webmvc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866) ~[spring-webmvc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.filters.RemoteIpFilter.doFilter(RemoteIpFilter.java:884) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.filters.RemoteIpFilter.doFilter(RemoteIpFilter.java:921) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at com.sakura.ofm.IpFilter$RequestIPFilter.doFilter(IpFilter.java:48) ~[classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_60]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_60]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_60]
+
+2018.11.05 18:08:57.386 [http-nio-8080-exec-5] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/write
+2018.11.05 18:09:08.366 [http-nio-8080-exec-9] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/resume
+2018.11.05 18:09:08.390 [http-nio-8080-exec-3] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/css/style.css
+2018.11.05 18:09:08.392 [http-nio-8080-exec-1] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/css/dashboard.css
+2018.11.05 18:09:08.399 [http-nio-8080-exec-2] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/css/popuo-box.css
+2018.11.05 18:14:36.627 [http-nio-8080-exec-2] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/blog/article
+2018.11.05 18:15:22.251 [http-nio-8080-exec-10] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/
+2018.11.05 18:15:22.391 [http-nio-8080-exec-10] INFO [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService:47] - HHH000397: Using ASTQueryTranslatorFactory
+2018.11.05 18:15:22.539 [http-nio-8080-exec-4] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/css/bootstrap.min.css
+2018.11.05 18:15:28.589 [http-nio-8080-exec-6] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/write
+2018.11.05 18:15:34.071 [http-nio-8080-exec-9] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/blog/saveblog
+2018.11.05 18:15:34.271 [http-nio-8080-exec-1] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/
+2018.11.05 18:15:51.061 [Thread-21] INFO [org.springframework.context.support.AbstractApplicationContext.doClose:991] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2a004ba4: startup date [Mon Nov 05 18:07:04 CST 2018]; root of context hierarchy
+2018.11.05 18:15:51.061 [Thread-21] INFO [org.springframework.jmx.export.MBeanExporter.destroy:451] - Unregistering JMX-exposed beans on shutdown
+2018.11.05 18:15:51.061 [Thread-21] INFO [org.springframework.jmx.support.MBeanRegistrationSupport.unregisterBeans:185] - Unregistering JMX-exposed beans
+2018.11.05 18:15:51.061 [Thread-21] INFO [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy:597] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018.11.05 18:15:51.061 [Thread-21] INFO [com.zaxxer.hikari.HikariDataSource.close:381] - HikariPool-2 - Shutdown initiated...
+2018.11.05 18:15:51.077 [Thread-21] INFO [com.zaxxer.hikari.HikariDataSource.close:383] - HikariPool-2 - Shutdown completed.
+2018.11.05 18:16:21.160 [restartedMain] INFO [org.springframework.boot.StartupInfoLogger.logStarting:50] - Starting OfmApplication on iotcomm-001-PC with PID 8072 (D:\WorkSpeace\gitSpeace\SpringBootStudy\target\classes started by iotcomm-001 in D:\WorkSpeace\gitSpeace\SpringBootStudy)
+2018.11.05 18:16:21.254 [restartedMain] INFO [org.springframework.boot.SpringApplication.logStartupProfileInfo:654] - No active profile set, falling back to default profiles: default
+2018.11.05 18:16:21.254 [restartedMain] INFO [org.springframework.context.support.AbstractApplicationContext.prepareRefresh:588] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@38965172: startup date [Mon Nov 05 18:16:21 CST 2018]; root of context hierarchy
+2018.11.05 18:16:21.550 [restartedMain] INFO [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:326] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$65f458fa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018.11.05 18:16:21.628 [restartedMain] INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:91] - Tomcat initialized with port(s): 8080 (http)
+2018.11.05 18:16:21.628 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Initializing ProtocolHandler ["http-nio-8080"]
+2018.11.05 18:16:21.628 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Starting service [Tomcat]
+2018.11.05 18:16:21.628 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018.11.05 18:16:21.691 [localhost-startStop-1] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Initializing Spring embedded WebApplicationContext
+2018.11.05 18:16:21.691 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:285] - Root WebApplicationContext: initialization completed in 437 ms
+2018.11.05 18:16:21.722 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018.11.05 18:16:21.722 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018.11.05 18:16:21.722 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018.11.05 18:16:21.722 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'requestContextFilter' to: [/*]
+2018.11.05 18:16:21.722 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:258] - Mapping filter: 'RequestIPFilter' to urls: [/*]
+2018.11.05 18:16:21.722 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'remoteIpFilter' to: [/*]
+2018.11.05 18:16:21.722 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.ServletRegistrationBean.addRegistration:187] - Servlet dispatcherServlet mapped to [/]
+2018.11.05 18:16:21.878 [restartedMain] INFO [com.zaxxer.hikari.HikariDataSource.getConnection:110] - HikariPool-3 - Starting...
+2018.11.05 18:16:22.159 [restartedMain] INFO [com.zaxxer.hikari.HikariDataSource.getConnection:123] - HikariPool-3 - Start completed.
+2018.11.05 18:16:22.206 [restartedMain] INFO [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory:361] - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018.11.05 18:16:22.206 [restartedMain] INFO [org.hibernate.dialect.Dialect.<init>:157] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2018.11.05 18:16:22.387 [restartedMain] INFO [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory:415] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018.11.05 18:16:22.449 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler:373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018.11.05 18:16:22.527 [restartedMain] INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache:588] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@38965172: startup date [Mon Nov 05 18:16:21 CST 2018]; root of context hierarchy
+2018.11.05 18:16:22.527 [restartedMain] WARN [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor:237] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018.11.05 18:16:22.543 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/blog/bloglist]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.BlogController.blogList(java.lang.String,int)
+2018.11.05 18:16:22.543 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/blog/article]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.BlogController.articleView(java.lang.String,java.lang.Long)
+2018.11.05 18:16:22.543 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/blog/saveblog]}" onto public java.lang.Object com.sakura.ofm.controller.BlogController.saveBlog(java.lang.String,java.lang.String,java.lang.String)
+2018.11.05 18:16:22.543 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.DefaultController.index(java.lang.String)
+2018.11.05 18:16:22.543 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/write]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.DefaultController.write(java.lang.String)
+2018.11.05 18:16:22.543 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/resume]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.DefaultController.resume(java.lang.String)
+2018.11.05 18:16:22.543 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/login]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.DefaultController.login(java.lang.String)
+2018.11.05 18:16:22.543 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/hello]}" onto public java.lang.String com.sakura.ofm.controller.HelloWorldController.index()
+2018.11.05 18:16:22.543 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/cn],methods=[GET]}" onto public java.lang.String com.sakura.ofm.controller.HelloWorldController.cn(java.lang.String)
+2018.11.05 18:16:22.543 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/upload],methods=[POST]}" onto public java.lang.String com.sakura.ofm.controller.HelloWorldController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest)
+2018.11.05 18:16:22.543 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/sakura]}" onto public java.lang.String com.sakura.ofm.controller.HelloWorldController.sakura()
+2018.11.05 18:16:22.543 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/user/login]}" onto public java.lang.String com.sakura.ofm.controller.UserController.login(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018.11.05 18:16:22.558 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018.11.05 18:16:22.558 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018.11.05 18:16:22.558 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler:373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018.11.05 18:16:22.558 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler:373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018.11.05 18:16:22.574 [restartedMain] WARN [org.thymeleaf.templatemode.TemplateMode.parse:150] - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018.11.05 18:16:22.589 [restartedMain] INFO [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>:61] - Adding welcome page template: index
+2018.11.05 18:16:22.621 [restartedMain] INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:57] - LiveReload server is running on port 35729
+2018.11.05 18:16:22.652 [restartedMain] INFO [org.springframework.jmx.export.MBeanExporter.afterSingletonsInstantiated:433] - Registering beans for JMX exposure on startup
+2018.11.05 18:16:22.652 [restartedMain] INFO [org.springframework.jmx.export.MBeanExporter.autodetect:895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018.11.05 18:16:22.652 [restartedMain] INFO [org.springframework.jmx.export.MBeanExporter.registerBeanInstance:668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018.11.05 18:16:22.667 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Starting ProtocolHandler ["http-nio-8080"]
+2018.11.05 18:16:22.667 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Using a shared selector for servlet write/read
+2018.11.05 18:16:22.792 [restartedMain] INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:206] - Tomcat started on port(s): 8080 (http) with context path '/ofm'
+2018.11.05 18:16:22.792 [restartedMain] INFO [org.springframework.boot.StartupInfoLogger.logStarted:59] - Started OfmApplication in 1.819 seconds (JVM running for 855.512)
+2018.11.05 18:16:22.792 [restartedMain] INFO [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener.onApplicationEvent:56] - Condition evaluation unchanged

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>write</title>
+    <base th:href="${base}">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <script src="https://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    <style type="text/css">
+        .toolbar {
+            border: 1px solid #ccc;
+            width: 70%;
+        }
+        .text {
+            border: 1px solid #ccc;
+            height: 600px;
+            width: 70%;
+            background-color: rgba(255,255,255,0.5);
+        }
+        input{
+            -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+            -webkit-user-select: none;
+            -moz-user-focus: none;
+            -moz-user-select: none;
+            -webkit-appearance:none;
+            outline: none;
+        }
+    </style>
+</head>
+<body style="padding-top: 60px;background-image: url(img/articlebg.jpg)">
+
+
+    <div style="width: 50%;margin-left: 25%;">
+        <input id="title" type="text" style="width: 100%;height: 50px;border-left-width:0px;border-top-width:0px;border-right-width:0px;border-bottom-color:black;text-align: center;font-weight: 900;font-size: 2em;background-color: rgba(255,255,255,0.5);"placeholder="请在此键入标题">
+    </div>
+
+    <div id="div1" class="toolbar" style="margin-left: 15%;margin-top: 50px;background: #eee">
+    </div>
+    <div id="div2" class="text" style="margin-left: 15%"> <!--可使用 min-height 实现编辑区域自动增加高度-->
+
+    </div>
+
+    <span id="submit" style="transition: 0.3s ease-in-out;border: 1px solid #3385ff;border-radius: 4px;background: #00B51D;box-shadow: inset 0px 1px 1px rgba(50,50,50,0.05);width: 10%;display: inline-block;margin-left: 45%; margin-top:30px;height: 35px;line-height: 35px;text-align: center;color: white">
+                                        提交
+                                    </span>
+
+    <!-- 注意， 只需要引用 JS，无需引用任何 CSS ！！！-->
+    <script type="text/javascript" src="js/write/wangEditor.min.js"></script>
+    <script type="text/javascript">
+        var E = window.wangEditor
+        var editor = new E('#div1', '#div2')
+        editor.customConfig.uploadImgShowBase64 = true   // 使用 base64 保存图片
+        editor.create()
+
+        document.getElementById('submit').addEventListener('click', function () {
+            var data ={"title":$("#title").val(),"content":editor.txt.html()}
+
+            $.ajax({
+                url:"blog/saveblog",
+                data:data,
+                type:"post",
+                success:function (result) {
+                    if (result.resultCode=="success"){
+                        window.location.href=result.successUrl;
+                    } else if (result.resultCode=="faill"){
+                        console.log(result.resultMessage);
+                    }
+                }
+            })
+
+        }, false)
+    </script>
+
+
+</body>
+</html>

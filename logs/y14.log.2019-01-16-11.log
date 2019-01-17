@@ -1,0 +1,1158 @@
+2019.01.16 10:37:31.906 [restartedMain] INFO [org.springframework.boot.StartupInfoLogger.logStarting:50] - Starting OfmApplication on iotcomm-001-PC with PID 260 (D:\WorkSpeace\gitSpeace\SpringBootStudy\target\classes started by iotcomm-001 in D:\WorkSpeace\gitSpeace\SpringBootStudy)
+2019.01.16 10:37:31.912 [restartedMain] INFO [org.springframework.boot.SpringApplication.logStartupProfileInfo:654] - No active profile set, falling back to default profiles: default
+2019.01.16 10:37:31.993 [restartedMain] INFO [org.springframework.context.support.AbstractApplicationContext.prepareRefresh:588] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@79521d0: startup date [Wed Jan 16 10:37:31 CST 2019]; root of context hierarchy
+2019.01.16 10:37:34.131 [restartedMain] INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:172] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019.01.16 10:37:34.397 [restartedMain] INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:172] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019.01.16 10:37:34.450 [restartedMain] INFO [org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate:291] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.sakura.ofm.dao.BlogRepository.
+2019.01.16 10:37:34.451 [restartedMain] INFO [org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate:291] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.sakura.ofm.dao.PackageRepository.
+2019.01.16 10:37:35.373 [restartedMain] INFO [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:326] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9cb601b6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019.01.16 10:37:36.270 [restartedMain] INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:91] - Tomcat initialized with port(s): 8080 (http)
+2019.01.16 10:37:36.291 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Initializing ProtocolHandler ["http-nio-8080"]
+2019.01.16 10:37:36.308 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Starting service [Tomcat]
+2019.01.16 10:37:36.308 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Starting Servlet Engine: Apache Tomcat/8.5.34
+2019.01.16 10:37:36.312 [localhost-startStop-1] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_60\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files\Java\jdk1.8.0_60\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\install\maven-3.3.9\bin;E:\sonarqube\sonar-scanner-2.8\bin;D:\install\nexus-2.14\nexus-2.14.3-02\bin;%ERLANG_HOME%\bin;D:\install\RabbitMQ Server\rabbitmq_server-3.6.9\sbin;C:\Android;C:\Windows\System32;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;D:\install\TortoiseSVN\bin;C:\Users\iotcomm-001\AppData\Roaming\npm;.]
+2019.01.16 10:37:36.447 [localhost-startStop-1] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Initializing Spring embedded WebApplicationContext
+2019.01.16 10:37:36.448 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:285] - Root WebApplicationContext: initialization completed in 4457 ms
+2019.01.16 10:37:36.512 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.ServletRegistrationBean.addRegistration:187] - Servlet dispatcherServlet mapped to [/]
+2019.01.16 10:37:36.516 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019.01.16 10:37:36.517 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019.01.16 10:37:36.517 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019.01.16 10:37:36.517 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'requestContextFilter' to: [/*]
+2019.01.16 10:37:36.892 [restartedMain] INFO [com.zaxxer.hikari.HikariDataSource.getConnection:110] - HikariPool-1 - Starting...
+2019.01.16 10:37:38.255 [restartedMain] ERROR [com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException:567] - HikariPool-1 - Exception during pool initialization. java.sql.SQLException: Access denied for user 'sakura'@'61.131.64.118' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2199) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_60]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_60]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_60]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) ~[?:1.8.0_60]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-2.7.9.jar:?]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151) ~[spring-jdbc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115) ~[spring-jdbc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78) ~[spring-jdbc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:319) ~[spring-jdbc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:356) ~[spring-jdbc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.DatabaseLookup.getDatabase(DatabaseLookup.java:72) ~[spring-boot-autoconfigure-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties.determineDatabase(JpaProperties.java:166) ~[spring-boot-autoconfigure-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.jpaVendorAdapter(JpaBaseConfiguration.java:111) ~[spring-boot-autoconfigure-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$bb8cc425.CGLIB$jpaVendorAdapter$6(<generated>) ~[spring-boot-autoconfigure-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$bb8cc425$$FastClassBySpringCGLIB$$e7e535ce.invoke(<generated>) ~[spring-boot-autoconfigure-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) ~[spring-core-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:365) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$bb8cc425.jpaVendorAdapter(<generated>) ~[spring-boot-autoconfigure-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_60]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_60]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_60]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_60]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:583) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1246) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:819) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:725) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:475) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1246) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:819) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:725) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:475) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1246) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1087) [spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) [spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:548) [spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at com.sakura.ofm.OfmApplication.main(OfmApplication.java:10) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_60]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_60]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_60]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_60]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+
+2019.01.16 10:37:38.285 [restartedMain] WARN [org.springframework.boot.autoconfigure.orm.jpa.DatabaseLookup.getDatabase:80] - Unable to determine jdbc url from datasource org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta-data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'sakura'@'61.131.64.118' (using password: YES)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:328) ~[spring-jdbc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:356) ~[spring-jdbc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.DatabaseLookup.getDatabase(DatabaseLookup.java:72) ~[spring-boot-autoconfigure-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties.determineDatabase(JpaProperties.java:166) ~[spring-boot-autoconfigure-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.jpaVendorAdapter(JpaBaseConfiguration.java:111) ~[spring-boot-autoconfigure-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$bb8cc425.CGLIB$jpaVendorAdapter$6(<generated>) ~[spring-boot-autoconfigure-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$bb8cc425$$FastClassBySpringCGLIB$$e7e535ce.invoke(<generated>) ~[spring-boot-autoconfigure-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) ~[spring-core-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:365) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$bb8cc425.jpaVendorAdapter(<generated>) ~[spring-boot-autoconfigure-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_60]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_60]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_60]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_60]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:583) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1246) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:819) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:725) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:475) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1246) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:819) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:725) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:475) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1246) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1087) [spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) [spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:548) [spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at com.sakura.ofm.OfmApplication.main(OfmApplication.java:10) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_60]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_60]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_60]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_60]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'sakura'@'61.131.64.118' (using password: YES)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81) ~[spring-jdbc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:319) ~[spring-jdbc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	... 66 more
+Caused by: java.sql.SQLException: Access denied for user 'sakura'@'61.131.64.118' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2199) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_60]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_60]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_60]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) ~[?:1.8.0_60]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-2.7.9.jar:?]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151) ~[spring-jdbc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115) ~[spring-jdbc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78) ~[spring-jdbc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:319) ~[spring-jdbc-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	... 66 more
+
+2019.01.16 10:37:38.377 [restartedMain] INFO [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory:361] - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019.01.16 10:37:39.793 [restartedMain] INFO [org.hibernate.Version.logVersion:45] - HHH000412: Hibernate Core {5.2.17.Final}
+2019.01.16 10:37:39.802 [restartedMain] INFO [org.hibernate.cfg.Environment.<clinit>:213] - HHH000206: hibernate.properties not found
+2019.01.16 10:37:40.967 [restartedMain] INFO [org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>:66] - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019.01.16 10:37:41.264 [restartedMain] INFO [com.zaxxer.hikari.HikariDataSource.getConnection:110] - HikariPool-1 - Starting...
+2019.01.16 10:37:42.328 [restartedMain] ERROR [com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException:567] - HikariPool-1 - Exception during pool initialization. java.sql.SQLException: Access denied for user 'sakura'@'61.131.64.118' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2199) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_60]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_60]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_60]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) ~[?:1.8.0_60]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-2.7.9.jar:?]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:88) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:259) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:233) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:51) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:94) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:242) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.handleTypes(MetadataBuildingProcess.java:352) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:111) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:861) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:888) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) ~[spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1753) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1690) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1087) [spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) [spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:548) [spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at com.sakura.ofm.OfmApplication.main(OfmApplication.java:10) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_60]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_60]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_60]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_60]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+
+2019.01.16 10:37:42.334 [restartedMain] WARN [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService:132] - HHH000342: Could not obtain connection to query metadata : Access denied for user 'sakura'@'61.131.64.118' (using password: YES)
+2019.01.16 10:37:42.526 [restartedMain] INFO [org.hibernate.dialect.Dialect.<init>:157] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019.01.16 10:37:42.615 [restartedMain] INFO [org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl.makeLobCreatorBuilder:63] - HHH000422: Disabling contextual LOB creation as connection was null
+2019.01.16 10:37:44.069 [restartedMain] INFO [com.zaxxer.hikari.HikariDataSource.getConnection:110] - HikariPool-1 - Starting...
+2019.01.16 10:37:45.132 [restartedMain] ERROR [com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException:567] - HikariPool-1 - Exception during pool initialization. java.sql.SQLException: Access denied for user 'sakura'@'61.131.64.118' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2199) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_60]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_60]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_60]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) ~[?:1.8.0_60]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-2.7.9.jar:?]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:60) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:67) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.getTables(InformationExtractorJdbcDatabaseMetaDataImpl.java:329) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:120) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:65) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:207) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:183) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:312) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:892) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) ~[spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1753) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1690) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1087) [spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) [spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:548) [spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at com.sakura.ofm.OfmApplication.main(OfmApplication.java:10) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_60]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_60]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_60]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_60]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+
+2019.01.16 10:37:45.137 [restartedMain] WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions:129] - SQL Error: 1045, SQLState: 28000
+2019.01.16 10:37:45.137 [restartedMain] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions:131] - Access denied for user 'sakura'@'61.131.64.118' (using password: YES)
+2019.01.16 10:37:45.141 [restartedMain] WARN [org.springframework.context.support.AbstractApplicationContext.refresh:556] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
+2019.01.16 10:37:45.147 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Stopping service [Tomcat]
+2019.01.16 10:37:45.235 [restartedMain] ERROR [org.springframework.boot.SpringApplication.reportFailure:837] - Application run failed org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1694) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1087) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:548) ~[spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at com.sakura.ofm.OfmApplication.main(OfmApplication.java:10) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_60]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_60]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_60]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_60]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:402) ~[spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1753) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1690) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	... 21 more
+Caused by: org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:47) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:111) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:97) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:69) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:60) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:67) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.getTables(InformationExtractorJdbcDatabaseMetaDataImpl.java:329) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:120) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:65) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:207) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:183) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:312) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:892) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) ~[spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1753) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1690) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	... 21 more
+Caused by: java.sql.SQLException: Access denied for user 'sakura'@'61.131.64.118' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2199) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_60]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_60]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_60]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) ~[?:1.8.0_60]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-2.7.9.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-2.7.9.jar:?]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:60) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:67) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.getTables(InformationExtractorJdbcDatabaseMetaDataImpl.java:329) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:120) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:65) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:207) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:183) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:312) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:892) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) ~[spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1753) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1690) ~[spring-beans-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	... 21 more
+
+2019.01.16 10:38:03.595 [restartedMain] INFO [org.springframework.boot.StartupInfoLogger.logStarting:50] - Starting OfmApplication on iotcomm-001-PC with PID 7952 (D:\WorkSpeace\gitSpeace\SpringBootStudy\target\classes started by iotcomm-001 in D:\WorkSpeace\gitSpeace\SpringBootStudy)
+2019.01.16 10:38:03.597 [restartedMain] INFO [org.springframework.boot.SpringApplication.logStartupProfileInfo:654] - No active profile set, falling back to default profiles: default
+2019.01.16 10:38:03.628 [restartedMain] INFO [org.springframework.context.support.AbstractApplicationContext.prepareRefresh:588] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1381111f: startup date [Wed Jan 16 10:38:03 CST 2019]; root of context hierarchy
+2019.01.16 10:38:04.242 [restartedMain] INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:172] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019.01.16 10:38:04.308 [restartedMain] INFO [org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:172] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019.01.16 10:38:04.318 [restartedMain] INFO [org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate:291] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.sakura.ofm.dao.BlogRepository.
+2019.01.16 10:38:04.319 [restartedMain] INFO [org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate:291] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.sakura.ofm.dao.PackageRepository.
+2019.01.16 10:38:04.668 [restartedMain] INFO [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:326] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$387c0bb1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019.01.16 10:38:05.147 [restartedMain] INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:91] - Tomcat initialized with port(s): 8080 (http)
+2019.01.16 10:38:05.157 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Initializing ProtocolHandler ["http-nio-8080"]
+2019.01.16 10:38:05.165 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Starting service [Tomcat]
+2019.01.16 10:38:05.166 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Starting Servlet Engine: Apache Tomcat/8.5.34
+2019.01.16 10:38:05.169 [localhost-startStop-1] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_60\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files\Java\jdk1.8.0_60\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\install\maven-3.3.9\bin;E:\sonarqube\sonar-scanner-2.8\bin;D:\install\nexus-2.14\nexus-2.14.3-02\bin;%ERLANG_HOME%\bin;D:\install\RabbitMQ Server\rabbitmq_server-3.6.9\sbin;C:\Android;C:\Windows\System32;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;D:\install\TortoiseSVN\bin;C:\Users\iotcomm-001\AppData\Roaming\npm;.]
+2019.01.16 10:38:05.242 [localhost-startStop-1] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Initializing Spring embedded WebApplicationContext
+2019.01.16 10:38:05.242 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:285] - Root WebApplicationContext: initialization completed in 1616 ms
+2019.01.16 10:38:05.291 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.ServletRegistrationBean.addRegistration:187] - Servlet dispatcherServlet mapped to [/]
+2019.01.16 10:38:05.295 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019.01.16 10:38:05.295 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019.01.16 10:38:05.296 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019.01.16 10:38:05.296 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'requestContextFilter' to: [/*]
+2019.01.16 10:38:05.413 [restartedMain] INFO [com.zaxxer.hikari.HikariDataSource.getConnection:110] - HikariPool-1 - Starting...
+2019.01.16 10:38:05.819 [restartedMain] INFO [com.zaxxer.hikari.HikariDataSource.getConnection:123] - HikariPool-1 - Start completed.
+2019.01.16 10:38:05.878 [restartedMain] INFO [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory:361] - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019.01.16 10:38:05.934 [restartedMain] INFO [org.hibernate.Version.logVersion:45] - HHH000412: Hibernate Core {5.2.17.Final}
+2019.01.16 10:38:05.935 [restartedMain] INFO [org.hibernate.cfg.Environment.<clinit>:213] - HHH000206: hibernate.properties not found
+2019.01.16 10:38:05.964 [restartedMain] INFO [org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>:66] - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019.01.16 10:38:06.058 [restartedMain] INFO [org.hibernate.dialect.Dialect.<init>:157] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019.01.16 10:38:06.809 [restartedMain] INFO [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory:415] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019.01.16 10:38:08.584 [restartedMain] INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache:588] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1381111f: startup date [Wed Jan 16 10:38:03 CST 2019]; root of context hierarchy
+2019.01.16 10:38:08.635 [restartedMain] WARN [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor:237] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019.01.16 10:38:08.706 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/blog/article]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.BlogController.articleView(java.lang.String,java.lang.Long)
+2019.01.16 10:38:08.707 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/blog/bloglist]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.BlogController.blogList(java.lang.String,int)
+2019.01.16 10:38:08.707 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/blog/saveblog]}" onto public java.lang.Object com.sakura.ofm.controller.BlogController.saveBlog(java.lang.String,java.lang.String,java.lang.String)
+2019.01.16 10:38:08.707 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.DefaultController.index(java.lang.String)
+2019.01.16 10:38:08.708 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/write]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.DefaultController.write(java.lang.String)
+2019.01.16 10:38:08.708 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/resume]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.DefaultController.resume(java.lang.String)
+2019.01.16 10:38:08.708 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/login]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.DefaultController.login(java.lang.String)
+2019.01.16 10:38:08.711 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/hello]}" onto public java.lang.String com.sakura.ofm.controller.HelloWorldController.index()
+2019.01.16 10:38:08.711 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/cn],methods=[GET]}" onto public java.lang.String com.sakura.ofm.controller.HelloWorldController.cn(java.lang.String)
+2019.01.16 10:38:08.711 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/upload],methods=[POST]}" onto public java.lang.String com.sakura.ofm.controller.HelloWorldController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest)
+2019.01.16 10:38:08.711 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/sakura]}" onto public java.lang.String com.sakura.ofm.controller.HelloWorldController.sakura()
+2019.01.16 10:38:08.712 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/test/string]}" onto public java.lang.String com.sakura.ofm.controller.TestController.test(java.lang.String)
+2019.01.16 10:38:08.714 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/user/login]}" onto public java.lang.String com.sakura.ofm.controller.UserController.login(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2019.01.16 10:38:08.716 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019.01.16 10:38:08.716 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019.01.16 10:38:08.762 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler:373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019.01.16 10:38:08.763 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler:373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019.01.16 10:38:08.858 [restartedMain] WARN [org.thymeleaf.templatemode.TemplateMode.parse:150] - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019.01.16 10:38:08.930 [restartedMain] INFO [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>:61] - Adding welcome page template: index
+2019.01.16 10:38:09.435 [restartedMain] INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:57] - LiveReload server is running on port 35729
+2019.01.16 10:38:09.483 [restartedMain] INFO [org.springframework.jmx.export.MBeanExporter.afterSingletonsInstantiated:433] - Registering beans for JMX exposure on startup
+2019.01.16 10:38:09.484 [restartedMain] INFO [org.springframework.jmx.export.MBeanExporter.autodetect:895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019.01.16 10:38:09.488 [restartedMain] INFO [org.springframework.jmx.export.MBeanExporter.registerBeanInstance:668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019.01.16 10:38:09.501 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Starting ProtocolHandler ["http-nio-8080"]
+2019.01.16 10:38:09.509 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Using a shared selector for servlet write/read
+2019.01.16 10:38:09.547 [restartedMain] INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:206] - Tomcat started on port(s): 8080 (http) with context path '/ofm'
+2019.01.16 10:38:09.550 [restartedMain] INFO [org.springframework.boot.StartupInfoLogger.logStarted:59] - Started OfmApplication in 6.174 seconds (JVM running for 6.993)
+2019.01.16 10:38:19.682 [http-nio-8080-exec-1] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019.01.16 10:38:19.683 [http-nio-8080-exec-1] INFO [org.springframework.web.servlet.FrameworkServlet.initServletBean:494] - FrameworkServlet 'dispatcherServlet': initialization started
+2019.01.16 10:38:19.725 [http-nio-8080-exec-1] INFO [org.springframework.web.servlet.FrameworkServlet.initServletBean:509] - FrameworkServlet 'dispatcherServlet': initialization completed in 41 ms
+2019.01.16 10:38:19.817 [http-nio-8080-exec-1] WARN [org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.logException:194] - Resolved exception caused by handler execution: org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'data' is not present
+2019.01.16 10:38:21.890 [http-nio-8080-exec-3] WARN [org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.logException:194] - Resolved exception caused by handler execution: org.springframework.web.bind.ServletRequestBindingException: Missing request attribute 'base' of type String
+2019.01.16 10:38:46.491 [http-nio-8080-exec-5] WARN [org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.logException:194] - Resolved exception caused by handler execution: org.springframework.web.bind.ServletRequestBindingException: Missing request attribute 'base' of type String
+2019.01.16 10:39:09.920 [http-nio-8080-exec-7] WARN [org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.logException:194] - Resolved exception caused by handler execution: org.springframework.web.bind.ServletRequestBindingException: Missing request attribute 'base' of type String
+2019.01.16 10:39:11.833 [http-nio-8080-exec-10] WARN [org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.logException:194] - Resolved exception caused by handler execution: org.springframework.web.bind.ServletRequestBindingException: Missing request attribute 'base' of type String
+2019.01.16 10:40:55.650 [restartedMain] INFO [org.springframework.boot.StartupInfoLogger.logStarting:50] - Starting OfmApplication on iotcomm-001-PC with PID 5360 (D:\WorkSpeace\gitSpeace\SpringBootStudy\target\classes started by iotcomm-001 in D:\WorkSpeace\gitSpeace\SpringBootStudy)
+2019.01.16 10:40:55.652 [restartedMain] INFO [org.springframework.boot.SpringApplication.logStartupProfileInfo:654] - No active profile set, falling back to default profiles: default
+2019.01.16 10:40:55.686 [restartedMain] INFO [org.springframework.context.support.AbstractApplicationContext.prepareRefresh:588] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7535a662: startup date [Wed Jan 16 10:40:55 CST 2019]; root of context hierarchy
+2019.01.16 10:40:56.843 [restartedMain] INFO [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:326] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cd14d94b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019.01.16 10:40:57.199 [restartedMain] INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:91] - Tomcat initialized with port(s): 8080 (http)
+2019.01.16 10:40:57.208 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Initializing ProtocolHandler ["http-nio-8080"]
+2019.01.16 10:40:57.216 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Starting service [Tomcat]
+2019.01.16 10:40:57.217 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Starting Servlet Engine: Apache Tomcat/8.5.34
+2019.01.16 10:40:57.221 [localhost-startStop-1] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_60\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files\Java\jdk1.8.0_60\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\install\maven-3.3.9\bin;E:\sonarqube\sonar-scanner-2.8\bin;D:\install\nexus-2.14\nexus-2.14.3-02\bin;%ERLANG_HOME%\bin;D:\install\RabbitMQ Server\rabbitmq_server-3.6.9\sbin;C:\Android;C:\Windows\System32;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;D:\install\TortoiseSVN\bin;C:\Users\iotcomm-001\AppData\Roaming\npm;.]
+2019.01.16 10:40:57.284 [localhost-startStop-1] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Initializing Spring embedded WebApplicationContext
+2019.01.16 10:40:57.285 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:285] - Root WebApplicationContext: initialization completed in 1601 ms
+2019.01.16 10:40:57.336 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.ServletRegistrationBean.addRegistration:187] - Servlet dispatcherServlet mapped to [/]
+2019.01.16 10:40:57.339 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019.01.16 10:40:57.339 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019.01.16 10:40:57.340 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019.01.16 10:40:57.340 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'requestContextFilter' to: [/*]
+2019.01.16 10:40:57.541 [restartedMain] INFO [com.zaxxer.hikari.HikariDataSource.getConnection:110] - HikariPool-1 - Starting...
+2019.01.16 10:40:57.919 [restartedMain] INFO [com.zaxxer.hikari.HikariDataSource.getConnection:123] - HikariPool-1 - Start completed.
+2019.01.16 10:40:57.954 [restartedMain] INFO [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory:361] - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019.01.16 10:40:58.010 [restartedMain] INFO [org.hibernate.Version.logVersion:45] - HHH000412: Hibernate Core {5.2.17.Final}
+2019.01.16 10:40:58.011 [restartedMain] INFO [org.hibernate.cfg.Environment.<clinit>:213] - HHH000206: hibernate.properties not found
+2019.01.16 10:40:58.041 [restartedMain] INFO [org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>:66] - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019.01.16 10:40:58.128 [restartedMain] INFO [org.hibernate.dialect.Dialect.<init>:157] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019.01.16 10:40:58.558 [restartedMain] INFO [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory:415] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019.01.16 10:40:59.275 [restartedMain] INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache:588] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7535a662: startup date [Wed Jan 16 10:40:55 CST 2019]; root of context hierarchy
+2019.01.16 10:40:59.300 [restartedMain] WARN [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor:237] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019.01.16 10:40:59.328 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/blog/article]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.BlogController.articleView(java.lang.String,java.lang.Long)
+2019.01.16 10:40:59.329 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/blog/bloglist]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.BlogController.blogList(java.lang.String,int)
+2019.01.16 10:40:59.329 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/blog/saveblog]}" onto public java.lang.Object com.sakura.ofm.controller.BlogController.saveBlog(java.lang.String,java.lang.String,java.lang.String)
+2019.01.16 10:40:59.330 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.DefaultController.index(java.lang.String)
+2019.01.16 10:40:59.330 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/write]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.DefaultController.write(java.lang.String)
+2019.01.16 10:40:59.330 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/resume]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.DefaultController.resume(java.lang.String)
+2019.01.16 10:40:59.330 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/login]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.DefaultController.login(java.lang.String)
+2019.01.16 10:40:59.333 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/hello]}" onto public java.lang.String com.sakura.ofm.controller.HelloWorldController.index()
+2019.01.16 10:40:59.333 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/cn],methods=[GET]}" onto public java.lang.String com.sakura.ofm.controller.HelloWorldController.cn(java.lang.String)
+2019.01.16 10:40:59.333 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/upload],methods=[POST]}" onto public java.lang.String com.sakura.ofm.controller.HelloWorldController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest)
+2019.01.16 10:40:59.333 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/sakura]}" onto public java.lang.String com.sakura.ofm.controller.HelloWorldController.sakura()
+2019.01.16 10:40:59.334 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/test/string]}" onto public java.lang.String com.sakura.ofm.controller.TestController.test(java.lang.String)
+2019.01.16 10:40:59.335 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/user/login]}" onto public java.lang.String com.sakura.ofm.controller.UserController.login(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2019.01.16 10:40:59.337 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019.01.16 10:40:59.338 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019.01.16 10:40:59.369 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler:373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019.01.16 10:40:59.369 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler:373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019.01.16 10:40:59.423 [restartedMain] WARN [org.thymeleaf.templatemode.TemplateMode.parse:150] - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019.01.16 10:40:59.466 [restartedMain] INFO [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>:61] - Adding welcome page template: index
+2019.01.16 10:40:59.668 [restartedMain] INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:57] - LiveReload server is running on port 35729
+2019.01.16 10:40:59.691 [restartedMain] INFO [org.springframework.jmx.export.MBeanExporter.afterSingletonsInstantiated:433] - Registering beans for JMX exposure on startup
+2019.01.16 10:40:59.692 [restartedMain] INFO [org.springframework.jmx.export.MBeanExporter.autodetect:895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019.01.16 10:40:59.696 [restartedMain] INFO [org.springframework.jmx.export.MBeanExporter.registerBeanInstance:668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019.01.16 10:40:59.709 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Starting ProtocolHandler ["http-nio-8080"]
+2019.01.16 10:40:59.717 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Using a shared selector for servlet write/read
+2019.01.16 10:40:59.727 [restartedMain] INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:206] - Tomcat started on port(s): 8080 (http) with context path '/ofm'
+2019.01.16 10:40:59.730 [restartedMain] INFO [org.springframework.boot.StartupInfoLogger.logStarted:59] - Started OfmApplication in 4.336 seconds (JVM running for 5.307)
+2019.01.16 10:41:04.472 [http-nio-8080-exec-1] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019.01.16 10:41:04.472 [http-nio-8080-exec-1] INFO [org.springframework.web.servlet.FrameworkServlet.initServletBean:494] - FrameworkServlet 'dispatcherServlet': initialization started
+2019.01.16 10:41:04.488 [http-nio-8080-exec-1] INFO [org.springframework.web.servlet.FrameworkServlet.initServletBean:509] - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2019.01.16 10:41:04.513 [http-nio-8080-exec-1] WARN [org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.logException:194] - Resolved exception caused by handler execution: org.springframework.web.bind.ServletRequestBindingException: Missing request attribute 'base' of type String
+2019.01.16 10:41:05.405 [http-nio-8080-exec-2] WARN [org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.logException:194] - Resolved exception caused by handler execution: org.springframework.web.bind.ServletRequestBindingException: Missing request attribute 'base' of type String
+2019.01.16 10:41:06.065 [http-nio-8080-exec-3] WARN [org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.logException:194] - Resolved exception caused by handler execution: org.springframework.web.bind.ServletRequestBindingException: Missing request attribute 'base' of type String
+2019.01.16 10:41:06.543 [http-nio-8080-exec-4] WARN [org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.logException:194] - Resolved exception caused by handler execution: org.springframework.web.bind.ServletRequestBindingException: Missing request attribute 'base' of type String
+2019.01.16 10:41:53.615 [http-nio-8080-exec-7] WARN [org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.logException:194] - Resolved exception caused by handler execution: org.springframework.web.bind.ServletRequestBindingException: Missing request attribute 'base' of type String
+2019.01.16 10:42:41.446 [http-nio-8080-exec-9] WARN [org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.logException:194] - Resolved exception caused by handler execution: org.springframework.web.bind.ServletRequestBindingException: Missing request attribute 'base' of type String
+2019.01.16 10:42:45.085 [http-nio-8080-exec-10] WARN [org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.logException:194] - Resolved exception caused by handler execution: org.springframework.web.bind.ServletRequestBindingException: Missing request attribute 'base' of type String
+2019.01.16 10:44:45.191 [restartedMain] INFO [org.springframework.boot.StartupInfoLogger.logStarting:50] - Starting OfmApplication on iotcomm-001-PC with PID 7228 (D:\WorkSpeace\gitSpeace\SpringBootStudy\target\classes started by iotcomm-001 in D:\WorkSpeace\gitSpeace\SpringBootStudy)
+2019.01.16 10:44:45.194 [restartedMain] INFO [org.springframework.boot.SpringApplication.logStartupProfileInfo:654] - No active profile set, falling back to default profiles: default
+2019.01.16 10:44:45.225 [restartedMain] INFO [org.springframework.context.support.AbstractApplicationContext.prepareRefresh:588] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@78293a45: startup date [Wed Jan 16 10:44:45 CST 2019]; root of context hierarchy
+2019.01.16 10:44:46.161 [restartedMain] INFO [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:326] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$35712bd3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019.01.16 10:44:46.510 [restartedMain] INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:91] - Tomcat initialized with port(s): 8080 (http)
+2019.01.16 10:44:46.520 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Initializing ProtocolHandler ["http-nio-8080"]
+2019.01.16 10:44:46.528 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Starting service [Tomcat]
+2019.01.16 10:44:46.528 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Starting Servlet Engine: Apache Tomcat/8.5.34
+2019.01.16 10:44:46.532 [localhost-startStop-1] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_60\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files\Java\jdk1.8.0_60\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\install\maven-3.3.9\bin;E:\sonarqube\sonar-scanner-2.8\bin;D:\install\nexus-2.14\nexus-2.14.3-02\bin;%ERLANG_HOME%\bin;D:\install\RabbitMQ Server\rabbitmq_server-3.6.9\sbin;C:\Android;C:\Windows\System32;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;D:\install\TortoiseSVN\bin;C:\Users\iotcomm-001\AppData\Roaming\npm;.]
+2019.01.16 10:44:46.604 [localhost-startStop-1] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Initializing Spring embedded WebApplicationContext
+2019.01.16 10:44:46.604 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:285] - Root WebApplicationContext: initialization completed in 1381 ms
+2019.01.16 10:44:46.669 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019.01.16 10:44:46.669 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019.01.16 10:44:46.670 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019.01.16 10:44:46.670 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'requestContextFilter' to: [/*]
+2019.01.16 10:44:46.670 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:258] - Mapping filter: 'RequestIPFilter' to urls: [/*]
+2019.01.16 10:44:46.670 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure:245] - Mapping filter: 'remoteIpFilter' to: [/*]
+2019.01.16 10:44:46.670 [localhost-startStop-1] INFO [org.springframework.boot.web.servlet.ServletRegistrationBean.addRegistration:187] - Servlet dispatcherServlet mapped to [/]
+2019.01.16 10:44:46.882 [restartedMain] INFO [com.zaxxer.hikari.HikariDataSource.getConnection:110] - HikariPool-1 - Starting...
+2019.01.16 10:44:47.197 [restartedMain] INFO [com.zaxxer.hikari.HikariDataSource.getConnection:123] - HikariPool-1 - Start completed.
+2019.01.16 10:44:47.235 [restartedMain] INFO [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory:361] - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019.01.16 10:44:47.296 [restartedMain] INFO [org.hibernate.Version.logVersion:45] - HHH000412: Hibernate Core {5.2.17.Final}
+2019.01.16 10:44:47.297 [restartedMain] INFO [org.hibernate.cfg.Environment.<clinit>:213] - HHH000206: hibernate.properties not found
+2019.01.16 10:44:47.328 [restartedMain] INFO [org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>:66] - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019.01.16 10:44:47.415 [restartedMain] INFO [org.hibernate.dialect.Dialect.<init>:157] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019.01.16 10:44:47.817 [restartedMain] INFO [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory:415] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019.01.16 10:44:48.352 [restartedMain] INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache:588] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@78293a45: startup date [Wed Jan 16 10:44:45 CST 2019]; root of context hierarchy
+2019.01.16 10:44:48.377 [restartedMain] WARN [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor:237] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019.01.16 10:44:48.407 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/blog/article]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.BlogController.articleView(java.lang.String,java.lang.Long)
+2019.01.16 10:44:48.408 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/blog/bloglist]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.BlogController.blogList(java.lang.String,int)
+2019.01.16 10:44:48.408 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/blog/saveblog]}" onto public java.lang.Object com.sakura.ofm.controller.BlogController.saveBlog(java.lang.String,java.lang.String,java.lang.String)
+2019.01.16 10:44:48.409 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.DefaultController.index(java.lang.String)
+2019.01.16 10:44:48.409 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/write]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.DefaultController.write(java.lang.String)
+2019.01.16 10:44:48.410 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/resume]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.DefaultController.resume(java.lang.String)
+2019.01.16 10:44:48.410 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/login]}" onto public org.springframework.web.servlet.ModelAndView com.sakura.ofm.controller.DefaultController.login(java.lang.String)
+2019.01.16 10:44:48.413 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/hello]}" onto public java.lang.String com.sakura.ofm.controller.HelloWorldController.index()
+2019.01.16 10:44:48.413 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/cn],methods=[GET]}" onto public java.lang.String com.sakura.ofm.controller.HelloWorldController.cn(java.lang.String)
+2019.01.16 10:44:48.413 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/upload],methods=[POST]}" onto public java.lang.String com.sakura.ofm.controller.HelloWorldController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest)
+2019.01.16 10:44:48.414 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/sakura]}" onto public java.lang.String com.sakura.ofm.controller.HelloWorldController.sakura()
+2019.01.16 10:44:48.414 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/test/string]}" onto public java.lang.String com.sakura.ofm.controller.TestController.test(java.lang.String)
+2019.01.16 10:44:48.416 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/user/login]}" onto public java.lang.String com.sakura.ofm.controller.UserController.login(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2019.01.16 10:44:48.418 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019.01.16 10:44:48.418 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register:549] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019.01.16 10:44:48.453 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler:373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019.01.16 10:44:48.453 [restartedMain] INFO [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler:373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019.01.16 10:44:48.502 [restartedMain] WARN [org.thymeleaf.templatemode.TemplateMode.parse:150] - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019.01.16 10:44:48.544 [restartedMain] INFO [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>:61] - Adding welcome page template: index
+2019.01.16 10:44:48.735 [restartedMain] INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:57] - LiveReload server is running on port 35729
+2019.01.16 10:44:48.760 [restartedMain] INFO [org.springframework.jmx.export.MBeanExporter.afterSingletonsInstantiated:433] - Registering beans for JMX exposure on startup
+2019.01.16 10:44:48.761 [restartedMain] INFO [org.springframework.jmx.export.MBeanExporter.autodetect:895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019.01.16 10:44:48.765 [restartedMain] INFO [org.springframework.jmx.export.MBeanExporter.registerBeanInstance:668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019.01.16 10:44:48.778 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Starting ProtocolHandler ["http-nio-8080"]
+2019.01.16 10:44:48.785 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Using a shared selector for servlet write/read
+2019.01.16 10:44:48.797 [restartedMain] INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:206] - Tomcat started on port(s): 8080 (http) with context path '/ofm'
+2019.01.16 10:44:48.800 [restartedMain] INFO [org.springframework.boot.StartupInfoLogger.logStarted:59] - Started OfmApplication in 3.852 seconds (JVM running for 4.799)
+2019.01.16 10:45:01.636 [http-nio-8080-exec-1] INFO [org.apache.juli.logging.DirectJDKLog.log:180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019.01.16 10:45:01.636 [http-nio-8080-exec-1] INFO [org.springframework.web.servlet.FrameworkServlet.initServletBean:494] - FrameworkServlet 'dispatcherServlet': initialization started
+2019.01.16 10:45:01.651 [http-nio-8080-exec-1] INFO [org.springframework.web.servlet.FrameworkServlet.initServletBean:509] - FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2019.01.16 10:45:01.658 [http-nio-8080-exec-1] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/
+2019.01.16 10:45:03.714 [http-nio-8080-exec-1] INFO [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService:47] - HHH000397: Using ASTQueryTranslatorFactory
+2019.01.16 10:45:04.589 [http-nio-8080-exec-2] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/css/bootstrap.min.css
+2019.01.16 10:45:04.589 [http-nio-8080-exec-3] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/css/bootstrap-theme.min.css
+2019.01.16 10:45:04.597 [http-nio-8080-exec-6] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/css/light-box.css
+2019.01.16 10:45:04.603 [http-nio-8080-exec-5] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/css/owl-carousel.css
+2019.01.16 10:45:04.604 [http-nio-8080-exec-4] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/css/fontAwesome.css
+2019.01.16 10:45:04.606 [http-nio-8080-exec-7] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/css/templatemo-style.css
+2019.01.16 10:45:08.132 [http-nio-8080-exec-3] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/blog/article
+2019.01.16 11:46:54.784 [restartedMain] INFO [org.springframework.boot.StartupInfoLogger.logStarting:50] - Starting OfmApplication on iotcomm-001-PC with PID 6416 (D:\WorkSpeace\gitSpeace\SpringBootStudy\target\classes started by iotcomm-001 in D:\WorkSpeace\gitSpeace\SpringBootStudy)
+2019.01.16 11:46:54.787 [restartedMain] INFO [org.springframework.boot.SpringApplication.logStartupProfileInfo:675] - No active profile set, falling back to default profiles: default
+2019.01.16 11:46:54.815 [restartedMain] INFO [org.springframework.boot.logging.DeferredLog.logTo:227] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019.01.16 11:46:54.816 [restartedMain] INFO [org.springframework.boot.logging.DeferredLog.logTo:227] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019.01.16 11:46:55.267 [restartedMain] WARN [org.mybatis.spring.mapper.ClassPathMapperScanner.doScan:166] - No MyBatis mapper was found in '[com.sakura.ofm]' package. Please check your configuration.
+2019.01.16 11:46:55.795 [restartedMain] INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:90] - Tomcat initialized with port(s): 80 (http)
+2019.01.16 11:46:55.806 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Initializing ProtocolHandler ["http-nio-80"]
+2019.01.16 11:46:55.812 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Starting service [Tomcat]
+2019.01.16 11:46:55.813 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019.01.16 11:46:55.818 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_60\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files\Java\jdk1.8.0_60\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\install\maven-3.3.9\bin;E:\sonarqube\sonar-scanner-2.8\bin;D:\install\nexus-2.14\nexus-2.14.3-02\bin;%ERLANG_HOME%\bin;D:\install\RabbitMQ Server\rabbitmq_server-3.6.9\sbin;C:\Android;C:\Windows\System32;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;D:\install\TortoiseSVN\bin;C:\Users\iotcomm-001\AppData\Roaming\npm;.]
+2019.01.16 11:46:55.928 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Initializing Spring embedded WebApplicationContext
+2019.01.16 11:46:55.929 [restartedMain] INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:296] - Root WebApplicationContext: initialization completed in 1113 ms
+2019.01.16 11:46:56.074 [restartedMain] WARN [org.springframework.context.support.AbstractApplicationContext.refresh:554] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'blogController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ofmBlogService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.sakura.ofm.dao.BlogDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+2019.01.16 11:46:56.076 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Stopping service [Tomcat]
+2019.01.16 11:46:56.400 [restartedMain] ERROR [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter.report:42] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.sakura.ofm.dao.BlogDao' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.sakura.ofm.dao.BlogDao' in your configuration.
+
+2019.01.16 11:47:41.796 [restartedMain] INFO [org.springframework.boot.StartupInfoLogger.logStarting:50] - Starting OfmApplication on iotcomm-001-PC with PID 5516 (D:\WorkSpeace\gitSpeace\SpringBootStudy\target\classes started by iotcomm-001 in D:\WorkSpeace\gitSpeace\SpringBootStudy)
+2019.01.16 11:47:41.798 [restartedMain] INFO [org.springframework.boot.SpringApplication.logStartupProfileInfo:675] - No active profile set, falling back to default profiles: default
+2019.01.16 11:47:41.831 [restartedMain] INFO [org.springframework.boot.logging.DeferredLog.logTo:227] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019.01.16 11:47:41.832 [restartedMain] INFO [org.springframework.boot.logging.DeferredLog.logTo:227] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019.01.16 11:47:42.771 [restartedMain] INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:90] - Tomcat initialized with port(s): 80 (http)
+2019.01.16 11:47:42.781 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Initializing ProtocolHandler ["http-nio-80"]
+2019.01.16 11:47:42.788 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Starting service [Tomcat]
+2019.01.16 11:47:42.788 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019.01.16 11:47:42.794 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_60\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files\Java\jdk1.8.0_60\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\install\maven-3.3.9\bin;E:\sonarqube\sonar-scanner-2.8\bin;D:\install\nexus-2.14\nexus-2.14.3-02\bin;%ERLANG_HOME%\bin;D:\install\RabbitMQ Server\rabbitmq_server-3.6.9\sbin;C:\Android;C:\Windows\System32;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;D:\install\TortoiseSVN\bin;C:\Users\iotcomm-001\AppData\Roaming\npm;.]
+2019.01.16 11:47:42.900 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Initializing Spring embedded WebApplicationContext
+2019.01.16 11:47:42.900 [restartedMain] INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:296] - Root WebApplicationContext: initialization completed in 1068 ms
+2019.01.16 11:47:43.008 [restartedMain] INFO [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56] - Init DruidDataSource
+2019.01.16 11:47:44.183 [restartedMain] INFO [com.alibaba.druid.pool.DruidDataSource.init:928] - {dataSource-1} inited
+2019.01.16 11:47:44.590 [restartedMain] INFO [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize:171] - Initializing ExecutorService 'applicationTaskExecutor'
+2019.01.16 11:47:45.030 [restartedMain] WARN [org.thymeleaf.templatemode.TemplateMode.parse:150] - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019.01.16 11:47:45.470 [restartedMain] INFO [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>:61] - Adding welcome page template: index
+2019.01.16 11:47:46.741 [restartedMain] INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:57] - LiveReload server is running on port 35729
+2019.01.16 11:47:46.838 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Starting ProtocolHandler ["http-nio-80"]
+2019.01.16 11:47:47.061 [restartedMain] INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:204] - Tomcat started on port(s): 80 (http) with context path '/ofm'
+2019.01.16 11:47:47.066 [restartedMain] INFO [org.springframework.boot.StartupInfoLogger.logStarted:59] - Started OfmApplication in 5.587 seconds (JVM running for 6.404)
+2019.01.16 11:48:46.428 [http-nio-80-exec-1] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019.01.16 11:48:46.428 [http-nio-80-exec-1] INFO [org.springframework.web.servlet.FrameworkServlet.initServletBean:524] - Initializing Servlet 'dispatcherServlet'
+2019.01.16 11:48:46.442 [http-nio-80-exec-1] INFO [org.springframework.web.servlet.FrameworkServlet.initServletBean:546] - Completed initialization in 14 ms
+2019.01.16 11:48:46.449 [http-nio-80-exec-1] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/
+2019.01.16 11:48:48.203 [http-nio-80-exec-1] ERROR [org.apache.juli.logging.DirectJDKLog.log:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [/ofm] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'createTime' in 'order clause'
+### The error may exist in file [D:\WorkSpeace\gitSpeace\SpringBootStudy\target\classes\mapper\BlogDao.xml]
+### The error may involve com.sakura.ofm.dao.BlogDao.selectByExampleWithBLOBs-Inline
+### The error occurred while setting parameters
+### SQL: select                 blog_id, title, create_time, head_img, read_count, status, package_id         ,           content         from blog                                            order by createTime limit ?,?
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'createTime' in 'order clause'
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'createTime' in 'order clause'] with root cause java.sql.SQLSyntaxErrorException: Unknown column 'createTime' in 'order clause'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:974) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:391) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3051) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3049) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498) ~[druid-1.1.9.jar:1.1.9]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_60]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_60]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_60]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_60]
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59) ~[mybatis-3.4.6.jar:3.4.6]
+	at com.sun.proxy.$Proxy96.execute(Unknown Source) ~[?:?]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:326) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83) ~[mybatis-3.4.6.jar:3.4.6]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_60]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_60]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_60]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_60]
+	at org.apache.ibatis.plugin.Invocation.proceed(Invocation.java:49) ~[mybatis-3.4.6.jar:3.4.6]
+	at com.github.pagehelper.SqlUtil.doProcessPage(SqlUtil.java:499) ~[pagehelper-4.1.6.jar:?]
+	at com.github.pagehelper.SqlUtil._processPage(SqlUtil.java:407) ~[pagehelper-4.1.6.jar:?]
+	at com.github.pagehelper.SqlUtil.processPage(SqlUtil.java:374) ~[pagehelper-4.1.6.jar:?]
+	at com.github.pagehelper.PageHelper.intercept(PageHelper.java:255) ~[pagehelper-4.1.6.jar:?]
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61) ~[mybatis-3.4.6.jar:3.4.6]
+	at com.sun.proxy.$Proxy94.query(Unknown Source) ~[?:?]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141) ~[mybatis-3.4.6.jar:3.4.6]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_60]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_60]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_60]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_60]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at com.sun.proxy.$Proxy78.selectList(Unknown Source) ~[?:?]
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:139) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:76) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59) ~[mybatis-3.4.6.jar:3.4.6]
+	at com.sun.proxy.$Proxy79.selectByExampleWithBLOBs(Unknown Source) ~[?:?]
+	at com.sakura.ofm.service.impl.BlogServiceImpl.getBolgForViewList(BlogServiceImpl.java:36) ~[classes/:?]
+	at com.sakura.ofm.controller.DefaultController.index(DefaultController.java:35) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_60]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_60]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_60]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_60]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.filters.RemoteIpFilter.doFilter(RemoteIpFilter.java:845) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.filters.RemoteIpFilter.doFilter(RemoteIpFilter.java:902) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123) ~[druid-1.1.9.jar:1.1.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at com.sakura.ofm.IpFilter$RequestIPFilter.doFilter(IpFilter.java:48) ~[classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_60]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_60]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_60]
+
+2019.01.16 11:50:07.566 [Thread-17] INFO [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown:208] - Shutting down ExecutorService 'applicationTaskExecutor'
+2019.01.16 11:50:07.570 [Thread-17] INFO [com.alibaba.druid.pool.DruidDataSource.close:1823] - {dataSource-1} closed
+2019.01.16 11:50:07.794 [restartedMain] INFO [org.springframework.boot.StartupInfoLogger.logStarting:50] - Starting OfmApplication on iotcomm-001-PC with PID 5516 (D:\WorkSpeace\gitSpeace\SpringBootStudy\target\classes started by iotcomm-001 in D:\WorkSpeace\gitSpeace\SpringBootStudy)
+2019.01.16 11:50:07.794 [restartedMain] INFO [org.springframework.boot.SpringApplication.logStartupProfileInfo:675] - No active profile set, falling back to default profiles: default
+2019.01.16 11:50:08.035 [restartedMain] INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:90] - Tomcat initialized with port(s): 80 (http)
+2019.01.16 11:50:08.036 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Initializing ProtocolHandler ["http-nio-80"]
+2019.01.16 11:50:08.036 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Starting service [Tomcat]
+2019.01.16 11:50:08.037 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019.01.16 11:50:08.046 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Initializing Spring embedded WebApplicationContext
+2019.01.16 11:50:08.046 [restartedMain] INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:296] - Root WebApplicationContext: initialization completed in 249 ms
+2019.01.16 11:50:08.076 [restartedMain] INFO [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56] - Init DruidDataSource
+2019.01.16 11:50:09.034 [restartedMain] INFO [com.alibaba.druid.pool.DruidDataSource.init:928] - {dataSource-2} inited
+2019.01.16 11:50:09.117 [restartedMain] INFO [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize:171] - Initializing ExecutorService 'applicationTaskExecutor'
+2019.01.16 11:50:09.146 [restartedMain] WARN [org.thymeleaf.templatemode.TemplateMode.parse:150] - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019.01.16 11:50:09.153 [restartedMain] INFO [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>:61] - Adding welcome page template: index
+2019.01.16 11:50:09.181 [restartedMain] INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:57] - LiveReload server is running on port 35729
+2019.01.16 11:50:09.202 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Starting ProtocolHandler ["http-nio-80"]
+2019.01.16 11:50:09.205 [restartedMain] INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:204] - Tomcat started on port(s): 80 (http) with context path '/ofm'
+2019.01.16 11:50:09.205 [restartedMain] INFO [org.springframework.boot.StartupInfoLogger.logStarted:59] - Started OfmApplication in 1.446 seconds (JVM running for 148.535)
+2019.01.16 11:50:09.208 [restartedMain] INFO [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener.onApplicationEvent:56] - Condition evaluation unchanged
+2019.01.16 11:50:17.087 [Thread-26] INFO [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown:208] - Shutting down ExecutorService 'applicationTaskExecutor'
+2019.01.16 11:50:17.089 [Thread-26] INFO [com.alibaba.druid.pool.DruidDataSource.close:1823] - {dataSource-2} closed
+2019.01.16 11:50:17.267 [restartedMain] INFO [org.springframework.boot.StartupInfoLogger.logStarting:50] - Starting OfmApplication on iotcomm-001-PC with PID 5516 (D:\WorkSpeace\gitSpeace\SpringBootStudy\target\classes started by iotcomm-001 in D:\WorkSpeace\gitSpeace\SpringBootStudy)
+2019.01.16 11:50:17.267 [restartedMain] INFO [org.springframework.boot.SpringApplication.logStartupProfileInfo:675] - No active profile set, falling back to default profiles: default
+2019.01.16 11:50:17.491 [restartedMain] INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:90] - Tomcat initialized with port(s): 80 (http)
+2019.01.16 11:50:17.491 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Initializing ProtocolHandler ["http-nio-80"]
+2019.01.16 11:50:17.492 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Starting service [Tomcat]
+2019.01.16 11:50:17.492 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019.01.16 11:50:17.501 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Initializing Spring embedded WebApplicationContext
+2019.01.16 11:50:17.501 [restartedMain] INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:296] - Root WebApplicationContext: initialization completed in 232 ms
+2019.01.16 11:50:17.525 [restartedMain] INFO [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56] - Init DruidDataSource
+2019.01.16 11:50:18.693 [restartedMain] INFO [com.alibaba.druid.pool.DruidDataSource.init:928] - {dataSource-3} inited
+2019.01.16 11:50:18.771 [restartedMain] INFO [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize:171] - Initializing ExecutorService 'applicationTaskExecutor'
+2019.01.16 11:50:18.799 [restartedMain] WARN [org.thymeleaf.templatemode.TemplateMode.parse:150] - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019.01.16 11:50:18.807 [restartedMain] INFO [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>:61] - Adding welcome page template: index
+2019.01.16 11:50:18.835 [restartedMain] INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:57] - LiveReload server is running on port 35729
+2019.01.16 11:50:18.856 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Starting ProtocolHandler ["http-nio-80"]
+2019.01.16 11:50:18.859 [restartedMain] INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:204] - Tomcat started on port(s): 80 (http) with context path '/ofm'
+2019.01.16 11:50:18.859 [restartedMain] INFO [org.springframework.boot.StartupInfoLogger.logStarted:59] - Started OfmApplication in 1.619 seconds (JVM running for 158.189)
+2019.01.16 11:50:18.861 [restartedMain] INFO [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener.onApplicationEvent:56] - Condition evaluation unchanged
+2019.01.16 11:50:29.332 [Thread-32] INFO [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown:208] - Shutting down ExecutorService 'applicationTaskExecutor'
+2019.01.16 11:50:29.337 [Thread-32] INFO [com.alibaba.druid.pool.DruidDataSource.close:1823] - {dataSource-3} closed
+2019.01.16 11:50:29.522 [restartedMain] INFO [org.springframework.boot.StartupInfoLogger.logStarting:50] - Starting OfmApplication on iotcomm-001-PC with PID 5516 (D:\WorkSpeace\gitSpeace\SpringBootStudy\target\classes started by iotcomm-001 in D:\WorkSpeace\gitSpeace\SpringBootStudy)
+2019.01.16 11:50:29.523 [restartedMain] INFO [org.springframework.boot.SpringApplication.logStartupProfileInfo:675] - No active profile set, falling back to default profiles: default
+2019.01.16 11:50:29.781 [restartedMain] INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:90] - Tomcat initialized with port(s): 80 (http)
+2019.01.16 11:50:29.782 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Initializing ProtocolHandler ["http-nio-80"]
+2019.01.16 11:50:29.782 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Starting service [Tomcat]
+2019.01.16 11:50:29.782 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019.01.16 11:50:29.793 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Initializing Spring embedded WebApplicationContext
+2019.01.16 11:50:29.793 [restartedMain] INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:296] - Root WebApplicationContext: initialization completed in 267 ms
+2019.01.16 11:50:29.825 [restartedMain] INFO [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56] - Init DruidDataSource
+2019.01.16 11:50:30.822 [restartedMain] INFO [com.alibaba.druid.pool.DruidDataSource.init:928] - {dataSource-4} inited
+2019.01.16 11:50:30.898 [restartedMain] INFO [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize:171] - Initializing ExecutorService 'applicationTaskExecutor'
+2019.01.16 11:50:30.926 [restartedMain] WARN [org.thymeleaf.templatemode.TemplateMode.parse:150] - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019.01.16 11:50:30.933 [restartedMain] INFO [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>:61] - Adding welcome page template: index
+2019.01.16 11:50:30.960 [restartedMain] INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:57] - LiveReload server is running on port 35729
+2019.01.16 11:50:30.984 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Starting ProtocolHandler ["http-nio-80"]
+2019.01.16 11:50:30.987 [restartedMain] INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:204] - Tomcat started on port(s): 80 (http) with context path '/ofm'
+2019.01.16 11:50:30.988 [restartedMain] INFO [org.springframework.boot.StartupInfoLogger.logStarted:59] - Started OfmApplication in 1.505 seconds (JVM running for 170.317)
+2019.01.16 11:50:30.989 [restartedMain] INFO [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener.onApplicationEvent:56] - Condition evaluation unchanged
+2019.01.16 11:50:33.899 [http-nio-80-exec-1] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019.01.16 11:50:33.900 [http-nio-80-exec-1] INFO [org.springframework.web.servlet.FrameworkServlet.initServletBean:524] - Initializing Servlet 'dispatcherServlet'
+2019.01.16 11:50:33.906 [http-nio-80-exec-1] INFO [org.springframework.web.servlet.FrameworkServlet.initServletBean:546] - Completed initialization in 6 ms
+2019.01.16 11:50:33.907 [http-nio-80-exec-1] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/
+2019.01.16 11:50:37.137 [http-nio-80-exec-1] ERROR [org.apache.juli.logging.DirectJDKLog.log:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [/ofm] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'createTime DESC' in 'order clause'
+### The error may exist in file [D:\WorkSpeace\gitSpeace\SpringBootStudy\target\classes\mapper\BlogDao.xml]
+### The error may involve com.sakura.ofm.dao.BlogDao.selectByExampleWithBLOBs-Inline
+### The error occurred while setting parameters
+### SQL: select                 blog_id, title, create_time, head_img, read_count, status, package_id         ,           content         from blog                                            order by `createTime DESC` limit ?,?
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'createTime DESC' in 'order clause'
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'createTime DESC' in 'order clause'] with root cause java.sql.SQLSyntaxErrorException: Unknown column 'createTime DESC' in 'order clause'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:974) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:391) ~[mysql-connector-java-8.0.13.jar:8.0.13]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3051) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3049) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167) ~[druid-1.1.9.jar:1.1.9]
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498) ~[druid-1.1.9.jar:1.1.9]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_60]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_60]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_60]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_60]
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59) ~[mybatis-3.4.6.jar:3.4.6]
+	at com.sun.proxy.$Proxy96.execute(Unknown Source) ~[?:?]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:326) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83) ~[mybatis-3.4.6.jar:3.4.6]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_60]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_60]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_60]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_60]
+	at org.apache.ibatis.plugin.Invocation.proceed(Invocation.java:49) ~[mybatis-3.4.6.jar:3.4.6]
+	at com.github.pagehelper.SqlUtil.doProcessPage(SqlUtil.java:499) ~[pagehelper-4.1.6.jar:?]
+	at com.github.pagehelper.SqlUtil._processPage(SqlUtil.java:407) ~[pagehelper-4.1.6.jar:?]
+	at com.github.pagehelper.SqlUtil.processPage(SqlUtil.java:374) ~[pagehelper-4.1.6.jar:?]
+	at com.github.pagehelper.PageHelper.intercept(PageHelper.java:255) ~[pagehelper-4.1.6.jar:?]
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61) ~[mybatis-3.4.6.jar:3.4.6]
+	at com.sun.proxy.$Proxy94.query(Unknown Source) ~[?:?]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141) ~[mybatis-3.4.6.jar:3.4.6]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_60]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_60]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_60]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_60]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at com.sun.proxy.$Proxy78.selectList(Unknown Source) ~[?:?]
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230) ~[mybatis-spring-1.3.2.jar:1.3.2]
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:139) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:76) ~[mybatis-3.4.6.jar:3.4.6]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59) ~[mybatis-3.4.6.jar:3.4.6]
+	at com.sun.proxy.$Proxy106.selectByExampleWithBLOBs(Unknown Source) ~[?:?]
+	at com.sakura.ofm.service.impl.BlogServiceImpl.getBolgForViewList(BlogServiceImpl.java:36) ~[classes/:?]
+	at com.sakura.ofm.controller.DefaultController.index(DefaultController.java:35) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_60]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_60]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_60]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_60]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.filters.RemoteIpFilter.doFilter(RemoteIpFilter.java:845) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.filters.RemoteIpFilter.doFilter(RemoteIpFilter.java:902) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123) ~[druid-1.1.9.jar:1.1.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at com.sakura.ofm.IpFilter$RequestIPFilter.doFilter(IpFilter.java:48) ~[classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_60]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_60]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.14.jar:9.0.14]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_60]
+
+2019.01.16 11:51:35.238 [Thread-38] INFO [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown:208] - Shutting down ExecutorService 'applicationTaskExecutor'
+2019.01.16 11:51:35.240 [Thread-38] INFO [com.alibaba.druid.pool.DruidDataSource.close:1823] - {dataSource-4} closed
+2019.01.16 11:51:35.437 [restartedMain] INFO [org.springframework.boot.StartupInfoLogger.logStarting:50] - Starting OfmApplication on iotcomm-001-PC with PID 5516 (D:\WorkSpeace\gitSpeace\SpringBootStudy\target\classes started by iotcomm-001 in D:\WorkSpeace\gitSpeace\SpringBootStudy)
+2019.01.16 11:51:35.438 [restartedMain] INFO [org.springframework.boot.SpringApplication.logStartupProfileInfo:675] - No active profile set, falling back to default profiles: default
+2019.01.16 11:51:35.686 [restartedMain] INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:90] - Tomcat initialized with port(s): 80 (http)
+2019.01.16 11:51:35.761 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Initializing ProtocolHandler ["http-nio-80"]
+2019.01.16 11:51:35.762 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Starting service [Tomcat]
+2019.01.16 11:51:35.762 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019.01.16 11:51:35.771 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Initializing Spring embedded WebApplicationContext
+2019.01.16 11:51:35.772 [restartedMain] INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:296] - Root WebApplicationContext: initialization completed in 331 ms
+2019.01.16 11:51:35.824 [restartedMain] INFO [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56] - Init DruidDataSource
+2019.01.16 11:51:36.911 [restartedMain] INFO [com.alibaba.druid.pool.DruidDataSource.init:928] - {dataSource-5} inited
+2019.01.16 11:51:37.002 [restartedMain] INFO [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize:171] - Initializing ExecutorService 'applicationTaskExecutor'
+2019.01.16 11:51:37.026 [restartedMain] WARN [org.thymeleaf.templatemode.TemplateMode.parse:150] - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019.01.16 11:51:37.031 [restartedMain] INFO [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>:61] - Adding welcome page template: index
+2019.01.16 11:51:37.055 [restartedMain] INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:57] - LiveReload server is running on port 35729
+2019.01.16 11:51:37.074 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Starting ProtocolHandler ["http-nio-80"]
+2019.01.16 11:51:37.077 [restartedMain] INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:204] - Tomcat started on port(s): 80 (http) with context path '/ofm'
+2019.01.16 11:51:37.078 [restartedMain] INFO [org.springframework.boot.StartupInfoLogger.logStarted:59] - Started OfmApplication in 1.669 seconds (JVM running for 236.403)
+2019.01.16 11:51:37.080 [restartedMain] INFO [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener.onApplicationEvent:56] - Condition evaluation unchanged
+2019.01.16 11:51:49.541 [Thread-44] INFO [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown:208] - Shutting down ExecutorService 'applicationTaskExecutor'
+2019.01.16 11:51:49.544 [Thread-44] INFO [com.alibaba.druid.pool.DruidDataSource.close:1823] - {dataSource-5} closed
+2019.01.16 11:51:49.676 [restartedMain] INFO [org.springframework.boot.StartupInfoLogger.logStarting:50] - Starting OfmApplication on iotcomm-001-PC with PID 5516 (D:\WorkSpeace\gitSpeace\SpringBootStudy\target\classes started by iotcomm-001 in D:\WorkSpeace\gitSpeace\SpringBootStudy)
+2019.01.16 11:51:49.677 [restartedMain] INFO [org.springframework.boot.SpringApplication.logStartupProfileInfo:675] - No active profile set, falling back to default profiles: default
+2019.01.16 11:51:49.919 [restartedMain] INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:90] - Tomcat initialized with port(s): 80 (http)
+2019.01.16 11:51:49.920 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Initializing ProtocolHandler ["http-nio-80"]
+2019.01.16 11:51:49.920 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Starting service [Tomcat]
+2019.01.16 11:51:49.920 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019.01.16 11:51:49.927 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Initializing Spring embedded WebApplicationContext
+2019.01.16 11:51:49.927 [restartedMain] INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:296] - Root WebApplicationContext: initialization completed in 248 ms
+2019.01.16 11:51:49.953 [restartedMain] INFO [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56] - Init DruidDataSource
+2019.01.16 11:51:50.859 [restartedMain] INFO [com.alibaba.druid.pool.DruidDataSource.init:928] - {dataSource-6} inited
+2019.01.16 11:51:50.927 [restartedMain] INFO [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize:171] - Initializing ExecutorService 'applicationTaskExecutor'
+2019.01.16 11:51:50.955 [restartedMain] WARN [org.thymeleaf.templatemode.TemplateMode.parse:150] - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019.01.16 11:51:50.961 [restartedMain] INFO [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>:61] - Adding welcome page template: index
+2019.01.16 11:51:50.992 [restartedMain] INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:57] - LiveReload server is running on port 35729
+2019.01.16 11:51:51.014 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Starting ProtocolHandler ["http-nio-80"]
+2019.01.16 11:51:51.018 [restartedMain] INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:204] - Tomcat started on port(s): 80 (http) with context path '/ofm'
+2019.01.16 11:51:51.018 [restartedMain] INFO [org.springframework.boot.StartupInfoLogger.logStarted:59] - Started OfmApplication in 1.374 seconds (JVM running for 250.343)
+2019.01.16 11:51:51.020 [restartedMain] INFO [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener.onApplicationEvent:56] - Condition evaluation unchanged
+2019.01.16 11:51:54.715 [http-nio-80-exec-3] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019.01.16 11:51:54.715 [http-nio-80-exec-3] INFO [org.springframework.web.servlet.FrameworkServlet.initServletBean:524] - Initializing Servlet 'dispatcherServlet'
+2019.01.16 11:51:54.722 [http-nio-80-exec-3] INFO [org.springframework.web.servlet.FrameworkServlet.initServletBean:546] - Completed initialization in 7 ms
+2019.01.16 11:51:54.723 [http-nio-80-exec-3] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/
+2019.01.16 11:52:00.051 [http-nio-80-exec-4] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/css/bootstrap.min.css
+2019.01.16 11:52:00.064 [http-nio-80-exec-7] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/css/fontAwesome.css
+2019.01.16 11:52:00.064 [http-nio-80-exec-2] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/css/bootstrap-theme.min.css
+2019.01.16 11:52:00.065 [http-nio-80-exec-8] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/css/light-box.css
+2019.01.16 11:52:00.067 [http-nio-80-exec-10] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/css/templatemo-style.css
+2019.01.16 11:52:00.069 [http-nio-80-exec-6] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/css/owl-carousel.css
+2019.01.16 11:54:20.786 [Thread-50] INFO [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown:208] - Shutting down ExecutorService 'applicationTaskExecutor'
+2019.01.16 11:54:20.789 [Thread-50] INFO [com.alibaba.druid.pool.DruidDataSource.close:1823] - {dataSource-6} closed
+2019.01.16 11:54:21.237 [restartedMain] INFO [org.springframework.boot.StartupInfoLogger.logStarting:50] - Starting OfmApplication on iotcomm-001-PC with PID 5516 (D:\WorkSpeace\gitSpeace\SpringBootStudy\target\classes started by iotcomm-001 in D:\WorkSpeace\gitSpeace\SpringBootStudy)
+2019.01.16 11:54:21.238 [restartedMain] INFO [org.springframework.boot.SpringApplication.logStartupProfileInfo:675] - No active profile set, falling back to default profiles: default
+2019.01.16 11:54:21.563 [restartedMain] INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:90] - Tomcat initialized with port(s): 80 (http)
+2019.01.16 11:54:21.563 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Initializing ProtocolHandler ["http-nio-80"]
+2019.01.16 11:54:21.564 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Starting service [Tomcat]
+2019.01.16 11:54:21.564 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019.01.16 11:54:21.577 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Initializing Spring embedded WebApplicationContext
+2019.01.16 11:54:21.578 [restartedMain] INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:296] - Root WebApplicationContext: initialization completed in 331 ms
+2019.01.16 11:54:21.605 [restartedMain] INFO [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56] - Init DruidDataSource
+2019.01.16 11:54:22.663 [restartedMain] INFO [com.alibaba.druid.pool.DruidDataSource.init:928] - {dataSource-7} inited
+2019.01.16 11:54:22.762 [restartedMain] INFO [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize:171] - Initializing ExecutorService 'applicationTaskExecutor'
+2019.01.16 11:54:22.787 [restartedMain] WARN [org.thymeleaf.templatemode.TemplateMode.parse:150] - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019.01.16 11:54:22.793 [restartedMain] INFO [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>:61] - Adding welcome page template: index
+2019.01.16 11:54:22.819 [restartedMain] INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:57] - LiveReload server is running on port 35729
+2019.01.16 11:54:22.840 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Starting ProtocolHandler ["http-nio-80"]
+2019.01.16 11:54:22.844 [restartedMain] INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:204] - Tomcat started on port(s): 80 (http) with context path '/ofm'
+2019.01.16 11:54:22.844 [restartedMain] INFO [org.springframework.boot.StartupInfoLogger.logStarted:59] - Started OfmApplication in 1.812 seconds (JVM running for 402.161)
+2019.01.16 11:54:22.846 [restartedMain] INFO [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener.onApplicationEvent:56] - Condition evaluation unchanged
+2019.01.16 11:54:23.000 [http-nio-80-exec-1] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019.01.16 11:54:23.000 [http-nio-80-exec-1] INFO [org.springframework.web.servlet.FrameworkServlet.initServletBean:524] - Initializing Servlet 'dispatcherServlet'
+2019.01.16 11:54:23.006 [http-nio-80-exec-1] INFO [org.springframework.web.servlet.FrameworkServlet.initServletBean:546] - Completed initialization in 6 ms
+2019.01.16 11:54:23.007 [http-nio-80-exec-1] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/
+2019.01.16 11:54:28.261 [http-nio-80-exec-5] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/css/bootstrap.min.css
+2019.01.16 11:54:28.262 [http-nio-80-exec-4] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/css/bootstrap-theme.min.css
+2019.01.16 11:54:28.263 [http-nio-80-exec-7] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/css/fontAwesome.css
+2019.01.16 11:54:28.264 [http-nio-80-exec-8] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/css/owl-carousel.css
+2019.01.16 11:54:28.263 [http-nio-80-exec-6] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/css/light-box.css
+2019.01.16 11:54:28.279 [http-nio-80-exec-10] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/css/templatemo-style.css
+2019.01.16 11:54:43.992 [Thread-56] INFO [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown:208] - Shutting down ExecutorService 'applicationTaskExecutor'
+2019.01.16 11:54:43.994 [Thread-56] INFO [com.alibaba.druid.pool.DruidDataSource.close:1823] - {dataSource-7} closed
+2019.01.16 11:54:44.400 [restartedMain] INFO [org.springframework.boot.StartupInfoLogger.logStarting:50] - Starting OfmApplication on iotcomm-001-PC with PID 5516 (D:\WorkSpeace\gitSpeace\SpringBootStudy\target\classes started by iotcomm-001 in D:\WorkSpeace\gitSpeace\SpringBootStudy)
+2019.01.16 11:54:44.401 [restartedMain] INFO [org.springframework.boot.SpringApplication.logStartupProfileInfo:675] - No active profile set, falling back to default profiles: default
+2019.01.16 11:54:44.663 [restartedMain] INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:90] - Tomcat initialized with port(s): 80 (http)
+2019.01.16 11:54:44.663 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Initializing ProtocolHandler ["http-nio-80"]
+2019.01.16 11:54:44.664 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Starting service [Tomcat]
+2019.01.16 11:54:44.664 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019.01.16 11:54:44.686 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Initializing Spring embedded WebApplicationContext
+2019.01.16 11:54:44.686 [restartedMain] INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:296] - Root WebApplicationContext: initialization completed in 282 ms
+2019.01.16 11:54:44.714 [restartedMain] INFO [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56] - Init DruidDataSource
+2019.01.16 11:54:45.896 [restartedMain] INFO [com.alibaba.druid.pool.DruidDataSource.init:928] - {dataSource-8} inited
+2019.01.16 11:54:45.971 [restartedMain] INFO [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize:171] - Initializing ExecutorService 'applicationTaskExecutor'
+2019.01.16 11:54:45.998 [restartedMain] WARN [org.thymeleaf.templatemode.TemplateMode.parse:150] - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019.01.16 11:54:46.003 [restartedMain] INFO [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>:61] - Adding welcome page template: index
+2019.01.16 11:54:46.031 [restartedMain] INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:57] - LiveReload server is running on port 35729
+2019.01.16 11:54:46.051 [restartedMain] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Starting ProtocolHandler ["http-nio-80"]
+2019.01.16 11:54:46.054 [restartedMain] INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:204] - Tomcat started on port(s): 80 (http) with context path '/ofm'
+2019.01.16 11:54:46.054 [restartedMain] INFO [org.springframework.boot.StartupInfoLogger.logStarted:59] - Started OfmApplication in 1.871 seconds (JVM running for 425.37)
+2019.01.16 11:54:46.056 [restartedMain] INFO [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener.onApplicationEvent:56] - Condition evaluation unchanged
+2019.01.16 11:55:59.864 [http-nio-80-exec-1] INFO [org.apache.juli.logging.DirectJDKLog.log:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019.01.16 11:55:59.864 [http-nio-80-exec-1] INFO [org.springframework.web.servlet.FrameworkServlet.initServletBean:524] - Initializing Servlet 'dispatcherServlet'
+2019.01.16 11:55:59.871 [http-nio-80-exec-1] INFO [org.springframework.web.servlet.FrameworkServlet.initServletBean:546] - Completed initialization in 7 ms
+2019.01.16 11:55:59.873 [http-nio-80-exec-1] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/
+2019.01.16 11:56:00.085 [http-nio-80-exec-2] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/css/bootstrap.min.css
+2019.01.16 11:56:00.091 [http-nio-80-exec-3] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/css/bootstrap-theme.min.css
+2019.01.16 11:56:00.092 [http-nio-80-exec-4] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/css/fontAwesome.css
+2019.01.16 11:56:00.095 [http-nio-80-exec-5] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/css/light-box.css
+2019.01.16 11:56:00.101 [http-nio-80-exec-7] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/css/owl-carousel.css
+2019.01.16 11:56:00.101 [http-nio-80-exec-6] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/css/templatemo-style.css
+2019.01.16 11:56:02.031 [http-nio-80-exec-8] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/blog/bloglist
+2019.01.16 11:56:03.574 [http-nio-80-exec-7] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/blog/bloglist
+2019.01.16 11:56:05.422 [http-nio-80-exec-10] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/blog/bloglist
+2019.01.16 11:56:06.619 [http-nio-80-exec-2] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/blog/bloglist
+2019.01.16 11:56:10.470 [http-nio-80-exec-8] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/blog/article
+2019.01.16 11:56:16.086 [http-nio-80-exec-10] INFO [com.sakura.ofm.IpFilter$RequestIPFilter.doFilter:45] - 用户访问,IP :0:0:0:0:0:0:0:1;地址：/ofm/blog/article

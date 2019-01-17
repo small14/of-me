@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>OFM</title>
+        <base th:href="${base}">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/light-box.css">
+        <link rel="stylesheet" href="css/owl-carousel.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+
+<body>
+        <header class="nav-down responsive-nav hidden-lg hidden-md">
+            <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--/.navbar-header-->
+            <div id="main-nav" class="collapse navbar-collapse">
+                <nav>
+                    <ul class="nav navbar-nav">
+                        <li><a href="#top">首页</a></li>
+                        <li><a href="#blog">零点三十分</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="sidebar-navigation hidde-sm hidden-xs">
+            <div class="logo">
+                <a href="#">OFM</a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#top" class="location">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            首页
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#blog" id="blog-view" class="location">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            零点三十分
+                        </a>
+                    </li>
+                    <li>
+                        <a href="resume" target="_blank" id="resume" >
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            关于我
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="slider">
+            <div class="Modern-Slider content-section" id="top">
+                <!-- Item -->
+                <div class="item item-1">
+                    <div class="img-fill">
+                    <div class="image"></div>
+                    <div class="info">
+                        <div>
+                          <h1>想得却不可得<br>你奈人生何</h1>
+                          <p>等你发现时间是贼了<br>
+                              它早已偷光你的选择<br>
+                              爱恋不过是一场高烧<br>
+                              思念是紧跟着的好不了的咳<br></p>
+
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="item item-2">-->
+                    <!--<div class="img-fill">-->
+                        <!--<div class="image"></div>-->
+                        <!--<div class="info">-->
+                        <!--<div>-->
+                          <!--<h1>Lorem ipsum <br>dolor</h1>-->
+                          <!--<p>Phasellus luctus odio eget dui imperdiet, at pulvinar ante convallis.-->
+							<!--<br>Proin sit amet fringilla erat.</p>-->
+                          <!--<div class="white-button button">-->
+                              <!--<a href="#featured">Discover More</a>-->
+                          <!--</div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--&lt;!&ndash; // Item &ndash;&gt;-->
+                <!--&lt;!&ndash; Item &ndash;&gt;-->
+                <!--<div class="item item-3">-->
+                    <!--<div class="img-fill">-->
+                        <!--<div class="image"></div>-->
+                        <!--<div class="info">-->
+                        <!--<div>-->
+                          <!--<h1>Suspendisse suscipit<br>nulla sed</h1>-->
+                          <!--<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices <br>posuere cubilia Curae; Sed at massa turpis.</p>-->
+                          <!---->
+                          <!--<div class="white-button button">-->
+                              <!--<a href="#featured">Discover More</a>-->
+                          <!--</div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!-- // Item -->
+            </div>
+        </div>
+        <div class="page-content">
+            <section id="blog" class="content-section">
+                <div class="section-heading">
+                    <h1>零点<br><em>三十分</em></h1>
+                    <em><p>当你发现时间是贼了，
+                    <br>它早已偷光你的选择。</p></em>
+                </div>
+                <div class="section-content">
+                    <div class="tabs-content">
+                        <div class="wrapper">
+                            <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+                              <li><a href="#tab1" class="active">OF ME .</a></li>
+                                <!--<li th:each="package:${packageList}"><a href="" th:text="*{package.getName()}"></a></li>-->
+                            </ul>
+                            <section id="first-tab-group" class="tabgroup">
+                                <div id="tab1" >
+                                    <ul th:each="blog:${blogBean.getItems()}">
+                                        <li style="width: 100%;">
+                                            <div class="item">
+                                                <!--<img src="img/blog_1.jpg" alt="">-->
+                                                <div class="text-content">
+                                                    <a th:href="*{'blog/article?id='+blog.getBlogId()}" target="_blank"><h4 th:text="*{blog.getTitle()}">Integer ultrices augue</h4></a>
+                                                    <span th:text="*{blog.getCreateTime()}">25 July 2018</span>
+                                                    <div class="accent-button button" style="float: right">
+                                                        <a th:href="*{'blog/article?id='+blog.getBlogId()}">阅读全文</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <span th:if="${blogBean.getCurrentPage()}>1">
+                                    <a style="transition: 0.3s ease-in-out;border: 1px solid #ccc;border-radius: 4px;background: #fff;box-shadow: inset 0px 1px 1px rgba(50,50,50,0.05);width: 66px;display: inline-block;margin-right: 10px;height: 35px;line-height: 35px;" th:href="${'blog/bloglist?pageNum='+(blogBean.getCurrentPage()-1)}">
+                                        上一页
+                                    </a>
+                                </span>
+                                <span th:if="${blogBean.getCurrentPage()}<=1">
+                                    <span style="transition: 0.3s ease-in-out;border: 1px solid #ccc;border-radius: 4px;background: #fff;box-shadow: inset 0px 1px 1px rgba(50,50,50,0.05);width: 66px;display: inline-block;margin-right: 10px;height: 35px;line-height: 35px;">
+                                        上一页
+                                    </span>
+                                </span>
+                                <span th:text="${blogBean.getCurrentPage()}"></span>/<span th:text="${blogBean.getTotalPage()}"></span>
+                                <span th:if="${blogBean.getTotalPage()}>${blogBean.getCurrentPage()}">
+                                    <a style="transition: 0.3s ease-in-out;border: 1px solid #ccc;border-radius: 4px;background: #fff;box-shadow: inset 0px 1px 1px rgba(50,50,50,0.05);width: 66px;display: inline-block;margin-right: 10px;height: 35px;line-height: 35px;" th:href="${'blog/bloglist?pageNum='+(blogBean.getCurrentPage()+1)}">
+                                        下一页
+                                    </a>
+                                </span>
+                                <span th:if="${blogBean.getTotalPage()}==${blogBean.getCurrentPage()}">
+                                    <span style="transition: 0.3s ease-in-out;border: 1px solid #ccc;border-radius: 4px;background: #fff;box-shadow: inset 0px 1px 1px rgba(50,50,50,0.05);width: 66px;display: inline-block;margin-right: 10px;height: 35px;line-height: 35px;">
+                                        下一页
+                                    </span>
+                                </span>
+                            </section> 
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="content-section">
+                <div id="map">
+
+                </div>
+
+            </section>
+            <section class="footer">
+                <p>Copyright &copy; 2018 Company Name . Design: <span id="aherf">y14</span></p>
+            </section>
+        </div>
+
+
+
+    <script src="https://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+    
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        // Hide Header on on scroll down
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('header').outerHeight();
+
+        $(window).scroll(function(event){
+            didScroll = true;
+        });
+
+        setInterval(function() {
+            if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
+
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+            
+            // Make sure they scroll more than delta
+            if(Math.abs(lastScrollTop - st) <= delta)
+                return;
+            
+            // If they scrolled down and are past the navbar, add class .nav-up.
+            // This is necessary so you never see what is "behind" the navbar.
+            if (st > lastScrollTop && st > navbarHeight){
+                // Scroll Down
+                $('header').removeClass('nav-down').addClass('nav-up');
+            } else {
+                // Scroll Up
+                if(st + $(window).height() < $(document).height()) {
+                    $('header').removeClass('nav-up').addClass('nav-down');
+                }
+            }
+            
+            lastScrollTop = st;
+        }
+
+    </script>
+
+    <script src="js/jquery.min.1.10.2.js" type="text/javascript"></script>
+
+    <script>
+        $(document).ready(function () {
+            window.location.href= window.location.href.replace("#blog","")+"#blog";
+
+            $("#aherf").click(function () {
+                window.location.href= window.location.href.replace("#blog","")+"login";
+            })
+        })
+    </script>
+    
+
+</body>
+</html>
