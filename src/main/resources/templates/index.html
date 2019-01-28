@@ -6,7 +6,7 @@
         <link rel="icon" type="image/x-icon" href="img/favicon.ico">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>OFM</title>
-        <base th:href="${base}">
+        <base th:href="${responseModel.getBaseUrl()}">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -126,7 +126,7 @@
         <div class="page-content">
             <section id="blog" class="content-section">
                 <div class="section-heading">
-                    <h1>零点<br><em>三十分</em></h1>
+                    <h1>零点<br><em><a href="private/write">三十分</a></em></h1>
                     <em><p>当你发现时间是贼了，
                     <br>它早已偷光你的选择。</p></em>
                 </div>
@@ -148,7 +148,12 @@
                                                     <span th:text="*{blog.getCreateTime()}">25 July 2018</span>
                                                     <div class="accent-button button" style="float: right">
                                                         <a th:href="*{'blog/article?id='+blog.getBlogId()}">阅读全文</a>
+                                                        <span th:if="${responseModel.isLogin()}">
+                                                            <a th:href="*{'blog/private/delete?id='+blog.getBlogId()}">删除</a>
+                                                        </span>
                                                     </div>
+
+
                                                 </div>
                                             </div>
                                         </li>
@@ -187,7 +192,11 @@
 
             </section>
             <section class="footer">
-                <p>Copyright &copy; 2018 Company Name . Design: <span id="aherf">y14</span></p>
+                <p>Copyright &copy; 2018 Company Name . Design:
+                    <span th:if="${!responseModel.isLogin()}"><a href="login">y14</a></span>
+                    <span th:if="${responseModel.isLogin()}"><a href="user/loginOut">y14</a></span>
+                </p>
+                <!--<object data="footer"></object>-->
             </section>
         </div>
 
@@ -248,10 +257,6 @@
     <script>
         $(document).ready(function () {
             window.location.href= window.location.href.replace("#blog","")+"#blog";
-
-            $("#aherf").click(function () {
-                window.location.href= window.location.href.replace("#blog","")+"login";
-            })
         })
     </script>
     

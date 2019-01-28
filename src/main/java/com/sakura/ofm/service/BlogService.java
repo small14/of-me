@@ -2,7 +2,6 @@ package com.sakura.ofm.service;
 
 
 import com.sakura.ofm.entity.Blog;
-import com.sakura.ofm.model.BlogListVO;
 import com.sakura.ofm.tools.PageBean;
 
 import java.util.List;
@@ -38,7 +37,11 @@ public interface BlogService {
      */
     int saveBlog(String content,String title);
 
-
-
+    /**
+     * 删除blog(逻辑删除)
+     * @param blogId blogID
+     * @return
+     */
+    int deleteBlog(Long blogId);
 
 }

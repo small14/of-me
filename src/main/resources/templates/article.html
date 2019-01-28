@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Article</title>
-    <base th:href="${base}">
+    <base th:href="${responseModel.getBaseUrl()}">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 
     <style>
@@ -33,17 +33,17 @@
 
     </style>
 </head>
-<body style="padding-top: 25px;background-image: url(img/articlebg.jpg)" >
-    <div style="width: 70%;margin-left: 15%;border: LightGrey 1px solid;padding-top: 25px;background-color: rgba(255,255,255,0.8);">
-        <h2 th:text="${article.getTitle()}" style="color: #666666;text-align: center"></h2>
-        <hr color="#e5c2c2" width="80%" style="height: 3px"/>
-        <div th:utext="${article.getContent()}" style="padding-left: 10%;padding-right: 10%"></div>
+<body style="padding-top: 25px;" >
+    <div style="width: 70%;margin-left: 15%;padding-top: 25px;background-color: rgba(255,255,255,0.8);">
+        <h1 th:text="${article.getTitle()}" style="color: black;text-align: center"></h1>
+        <!--<hr color="#e5c2c2" width="80%" style="height: 3px"/>-->
+        <div th:utext="${article.getContent()}" style="padding-left: 10%;padding-right: 10%;margin-top: 70px"></div>
 
     </div>
 
-    <section class="footer">
-        <p>Copyright &copy; 2018 Company Name . Design: <span>y14</span></p>
-    </section>
+    <!--<section class="footer">-->
+        <!--<p>Copyright &copy; 2018 Company Name . Design: <span>y14</span></p>-->
+    <!--</section>-->
 
 </body>
 </html>

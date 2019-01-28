@@ -1,16 +1,24 @@
 package com.sakura.ofm;
 
+import com.sakura.ofm.entity.Author;
+import com.sakura.ofm.entity.User;
+import com.sakura.ofm.model.DefaultResponseModel;
+import com.sakura.ofm.service.UserAuthorService;
+import com.sakura.ofm.tools.TokenHelper;
 import org.apache.catalina.filters.RemoteIpFilter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.rmi.Remote;
+import java.util.List;
 
 @Configuration
 public class IpFilter {
@@ -32,6 +40,8 @@ public class IpFilter {
     }
 
     public class RequestIPFilter implements Filter{
+
+
         private  final Logger logger = LoggerFactory.getLogger(RequestIPFilter.class);
         @Override
         public void init(FilterConfig filterConfig) throws ServletException {
@@ -46,8 +56,9 @@ public class IpFilter {
                 logger.info("用户访问,IP :"+request.getRemoteAddr()+";地址："+url);
             }
 
-
-            servletRequest.setAttribute("base",request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+request.getContextPath()+"/");
+            DefaultResponseModel responseModel = new DefaultResponseModel();
+            responseModel.setBaseUrl(request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+request.getContextPath()+"/");
+            servletRequest.setAttribute("responseModel",responseModel);
             filterChain.doFilter(servletRequest,servletResponse);
         }
 

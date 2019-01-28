@@ -1,11 +1,13 @@
 package com.sakura.ofm.tools;
 
-/**
- * 分页bean
- */
-
 import java.util.List;
 
+/**
+ * @author y14
+ * @date 2019-01-10
+ * 分页数据类
+ * @param <T>
+ */
 public class PageBean<T> {
     // 当前页
     private Integer currentPage = 1;

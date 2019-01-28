@@ -31,8 +31,10 @@ public class BlogServiceImpl implements BlogService {
 
         PageHelper.startPage(pageNum,pageCount);
         BlogExample example = new BlogExample();
+        BlogExample.Criteria criteria =  example.createCriteria();
         example.setDistinct(false);
         example.setOrderByClause("`create_time` DESC");
+        criteria.andStatusNotEqualTo(2);
         List<Blog> blogList = blogDao.selectByExampleWithBLOBs(example);
         int countNums = (int)blogDao.countByExample(example);
         PageBean pageData = new PageBean<Blog>(pageNum, pageCount, countNums);
@@ -60,8 +62,17 @@ public class BlogServiceImpl implements BlogService {
         blog.setPackageId(1);
         blog.setReadCount(0l);
         blog.setStatus(0);
-        return blogDao.insertSelective(blog);
+        return  blogDao.insertSelective(blog);
     }
 
-
+    @Override
+    public int deleteBlog(Long blogId) {
+        BlogExample example = new BlogExample();
+        example.setDistinct(false);
+        BlogExample.Criteria criteria =  example.createCriteria();
+        criteria.andBlogIdEqualTo(blogId);
+        Blog deleteBlog = new Blog();
+        deleteBlog.setStatus(2);
+        return blogDao.updateByExampleSelective(deleteBlog,example);
+    }
 }

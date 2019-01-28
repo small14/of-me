@@ -1,5 +1,6 @@
 package com.sakura.ofm.controller;
 
+import com.sakura.ofm.tools.EMailHelper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
@@ -14,6 +15,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
+import java.util.Date;
 
 @RestController
 public class HelloWorldController {
@@ -49,6 +51,13 @@ public class HelloWorldController {
         return "正确处理中文";
     }
 
+
+    @RequestMapping("/mail")
+    public String mail(){
+        EMailHelper eMailHelper = new EMailHelper();
+        eMailHelper.sendMail("测试","<h2>测试</h2>",new Date(),"982697020@qq.com");
+        return "success";
+    }
 
 
 }

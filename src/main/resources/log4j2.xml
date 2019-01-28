@@ -5,7 +5,7 @@
 <configuration status="off" monitorInterval="3600">
 
     <properties>
-        <property name="LOG_HOME">E:\root\output\test</property>
+        <property name="LOG_HOME">root/output/blog/</property>
     </properties>
     <!--appenders下常用的子节点有 Console、RollingFile、File -->
     <appenders>

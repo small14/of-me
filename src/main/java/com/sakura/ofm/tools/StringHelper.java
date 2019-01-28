@@ -19,4 +19,75 @@ public class StringHelper {
         content = content.replaceAll(" ", "");
         return content;
     }
+
+    public static void ttt() {
+        int sum = 0;
+        boolean flag = true;
+        int x=  10000;
+
+        for(int i = 2;i<=x;i++){
+            for (int j = 2;j<i;j++){
+                if (i % j == 0){
+                    flag = false;
+                    break;
+                }
+
+            }
+            if (flag){
+                System.out.println(i);
+                sum = sum+i;
+            }
+            flag = true;
+        }
+        System.out.println("合计："+sum);
+    }
+
+
+
+    public static void main(String[] args) {
+        ttt();
+        System.out.println();
+        System.out.println("------------------------------------------------------------");
+        ddd();
+        System.out.println();
+        System.out.println("------------------------------------------------------------");
+        dada();
+    }
+
+    public static void dada(){
+        int x = 10000;
+        boolean isprime = true;
+
+        for (int i = 2; i <= x; i++) {
+            for(int j = 2; j < i; j++) {
+                if(i % j == 0) {
+                    isprime = false;
+                    break;
+                }
+            }
+            if(isprime)System.out.print(i + " ");
+            isprime = true;
+        }
+
+    }
+
+    public static void ddd() {
+        int x = 10000;
+        boolean isprime = true;
+
+        for (int i = 2; i <= x; i++) {
+            for (int j = 2; j < i; j++) {
+                if (i % j == 0) {
+                    isprime = false;
+                    break;
+                }
+            }
+            if (isprime){
+                System.out.print(i + " ");
+            }
+            isprime = true;
+        }
+    }
+
+
 }

@@ -11,5 +11,5 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface OFM {
 
-    public String isCheck() default "yes";
+    public String value() default "OFM";
 }

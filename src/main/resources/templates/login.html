@@ -1,16 +1,69 @@
+
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html>
+<html xmlns:th="http://www.thymeleaf.org">
+<!-- Head -->
 <head>
-    <meta charset="UTF-8">
-    <title>login</title>
-    <base th:href="${base}">
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+	<title>登录</title>
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base th:href="${responseModel.getBaseUrl()}">
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<link rel="stylesheet" href="css/login.css" type="text/css" media="all">
+	<script src="https://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/jquery.serializeJSON/2.7.0/jquery.serializejson.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
 </head>
+<!-- //Head -->
+
+<!-- Body -->
 <body>
-    <form action="user/login" method="post">
-        <input type="text" name="userName"/>
-        <input type="password" name="password">
-        <input type="submit">
-    </form>
+
+	<h1>OFM</h1>
+
+	<div class="container w3layouts agileits">
+
+		<div class="login w3layouts agileits">
+			<h2 style="text-align: center">登 录</h2>
+			<form action="#" method="post" id="userForm">
+				<input type="text" Name="mailAddress" placeholder="邮箱" required="">
+				<input type="password" Name="password" placeholder="密码" required="">
+			</form>
+			<ul class="tick w3layouts agileits">
+			</ul>
+			<div class="send-button w3layouts agileits" style="text-align: center">
+					<input type="submit" id="login_button" value="登 录">
+			</div>
+
+			<div class="clear"></div>
+		</div><div class="copyrights"><a></a></div>
+		<!--<div class="register w3layouts agileits">-->
+			<!--<h2>注 册</h2>-->
+			<!--<form action="#" method="post">-->
+				<!--<input type="text" Name="Name" placeholder="用户名" required="">-->
+				<!--<input type="text" Name="Email" placeholder="邮箱" required="">-->
+				<!--<input type="password" Name="Password" placeholder="密码" required="">-->
+				<!--<input type="password" Name="Phone Number" placeholder="再次输入密码" required="">-->
+			<!--</form>-->
+			<!--<div class="send-button w3layouts agileits">-->
+				<!--<form>-->
+					<!--<input type="submit" value="免费注册">-->
+				<!--</form>-->
+			<!--</div>-->
+			<!--<div class="clear"></div>-->
+		<!--</div>-->
+
+		<div class="clear"></div>
+
+	</div>
+
+	<div class="footer w3layouts agileits">
+		<p>Copyright &copy; 2018 Company Name . Design:y14</p>
+	</div>
+
 </body>
+<!-- //Body -->
+
 </html>
