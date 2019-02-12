@@ -1,5 +1,7 @@
 package com.sakura.ofm.entity;
 
+import com.sakura.ofm.tools.DateHelper;
+
 import java.util.Date;
 
 public class Blog {
@@ -41,6 +43,10 @@ public class Blog {
 
     public void setCreateTime(Date createTime) {
         this.createTime = createTime;
+    }
+
+    public String getStringCreatTime(){
+        return DateHelper.dateToString(this.createTime);
     }
 
     public String getHeadImg() {

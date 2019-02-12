@@ -23,4 +23,10 @@ public interface BlogDao {
     int updateByExampleWithBLOBs(@Param("record") Blog record, @Param("example") BlogExample example);
 
     int updateByExample(@Param("record") Blog record, @Param("example") BlogExample example);
+
+    /**
+     * 查询博客列表，优化速度 不要包含内容
+     * @return
+     */
+    List<Blog> selectBlogList();
 }

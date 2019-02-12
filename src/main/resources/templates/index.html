@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="css/owl-carousel.css">
         <link rel="stylesheet" href="css/templatemo-style.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <!--<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>-->
     </head>
 
 <body>
@@ -78,10 +78,11 @@
                     <div class="image"></div>
                     <div class="info">
                         <div>
-                          <h1>想得却不可得<br>你奈人生何</h1>
-                          <p>等你发现时间是贼了<br>
-                              它早已偷光你的选择<br>
-                              爱恋不过是一场高烧<br>
+                          <h1>想得却不可得<br>
+                              你奈人生何</h1><br>
+                          <p>等你发现时间是贼了<br><br>
+                              它早已偷光你的选择<br><br>
+                              爱恋不过是一场高烧<br><br>
                               思念是紧跟着的好不了的咳<br></p>
 
                         </div>
@@ -126,7 +127,7 @@
         <div class="page-content">
             <section id="blog" class="content-section">
                 <div class="section-heading">
-                    <h1>零点<br><em><a href="private/write">三十分</a></em></h1>
+                    <h1>零点<br><em><a href="private/write" target="_blank">三十分</a></em></h1>
                     <em><p>当你发现时间是贼了，
                     <br>它早已偷光你的选择。</p></em>
                 </div>
@@ -145,15 +146,13 @@
                                                 <!--<img src="img/blog_1.jpg" alt="">-->
                                                 <div class="text-content">
                                                     <a th:href="*{'blog/article?id='+blog.getBlogId()}" target="_blank"><h4 th:text="*{blog.getTitle()}">Integer ultrices augue</h4></a>
-                                                    <span th:text="*{blog.getCreateTime()}">25 July 2018</span>
+                                                    <span th:text="*{blog.getStringCreatTime()}" style="margin-top: 20px">25 July 2018</span>
                                                     <div class="accent-button button" style="float: right">
-                                                        <a th:href="*{'blog/article?id='+blog.getBlogId()}">阅读全文</a>
+                                                        <a th:href="*{'blog/article?id='+blog.getBlogId()}" target="_blank">阅读全文</a>
                                                         <span th:if="${responseModel.isLogin()}">
                                                             <a th:href="*{'blog/private/delete?id='+blog.getBlogId()}">删除</a>
                                                         </span>
                                                     </div>
-
-
                                                 </div>
                                             </div>
                                         </li>
@@ -200,13 +199,9 @@
             </section>
         </div>
 
-
-
     <script src="https://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
     <script src="js/vendor/bootstrap.min.js"></script>
-    
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
@@ -230,13 +225,8 @@
 
         function hasScrolled() {
             var st = $(this).scrollTop();
-            
-            // Make sure they scroll more than delta
             if(Math.abs(lastScrollTop - st) <= delta)
                 return;
-            
-            // If they scrolled down and are past the navbar, add class .nav-up.
-            // This is necessary so you never see what is "behind" the navbar.
             if (st > lastScrollTop && st > navbarHeight){
                 // Scroll Down
                 $('header').removeClass('nav-down').addClass('nav-up');
@@ -249,9 +239,7 @@
             
             lastScrollTop = st;
         }
-
     </script>
-
     <script src="js/jquery.min.1.10.2.js" type="text/javascript"></script>
 
     <script>

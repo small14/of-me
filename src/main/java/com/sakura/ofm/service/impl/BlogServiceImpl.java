@@ -30,12 +30,12 @@ public class BlogServiceImpl implements BlogService {
     public PageBean getBolgForViewList(int pageNum, int pageCount) {
 
         PageHelper.startPage(pageNum,pageCount);
+        List<Blog> blogList = blogDao.selectBlogList();
         BlogExample example = new BlogExample();
         BlogExample.Criteria criteria =  example.createCriteria();
         example.setDistinct(false);
         example.setOrderByClause("`create_time` DESC");
         criteria.andStatusNotEqualTo(2);
-        List<Blog> blogList = blogDao.selectByExampleWithBLOBs(example);
         int countNums = (int)blogDao.countByExample(example);
         PageBean pageData = new PageBean<Blog>(pageNum, pageCount, countNums);
         pageData.setItems(blogList);

@@ -6,6 +6,9 @@ import com.sakura.ofm.model.ResultVO;
 import com.sakura.ofm.service.UserService;
 import com.sakura.ofm.tools.TokenHelper;
 import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authc.AccountException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
@@ -19,13 +22,22 @@ import javax.servlet.http.HttpSession;
 @RequestMapping("/user")
 public class UserController {
 
+
+    private  final Logger logger = LoggerFactory.getLogger(UserController.class);
+
     @Autowired
     private UserService userService;
 
     @RequestMapping("/login")
     @ResponseBody
     public ResultVO login(@RequestAttribute("responseModel") DefaultResponseModel responseModel, @RequestBody User user, HttpServletRequest request) {
-        User loginUser = TokenHelper.login(user);
+        User loginUser = null;
+        try {
+            loginUser = TokenHelper.login(user);
+        }catch (AccountException e){
+            logger.info("用户登录失败");
+        }
+
         ResultVO resultVO = new ResultVO();
         if (null != loginUser){
             resultVO.setResultCode(ResultVO.SUCCESSCODE);

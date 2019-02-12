@@ -7,15 +7,6 @@
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 
     <style>
-        .footer {
-            /*background-color: rgba(12,12,12,0.9);*/
-            height: 80px;
-            line-height: 80px;
-            display: inline-block;
-            text-align: center;
-            width: 100%;
-        }
-
         .footer p {
             margin-bottom: 0px;
             font-size: 13px;
@@ -33,17 +24,15 @@
 
     </style>
 </head>
-<body style="padding-top: 25px;" >
+<body style="padding-top: 25px;padding-bottom: 70px;background-image: url('img/article.jpg')" >
     <div style="width: 70%;margin-left: 15%;padding-top: 25px;background-color: rgba(255,255,255,0.8);">
         <h1 th:text="${article.getTitle()}" style="color: black;text-align: center"></h1>
-        <!--<hr color="#e5c2c2" width="80%" style="height: 3px"/>-->
-        <div th:utext="${article.getContent()}" style="padding-left: 10%;padding-right: 10%;margin-top: 70px"></div>
+        <div th:utext="${article.getContent()}" style="padding-left: 10%;padding-right: 10%;margin-top: 70px;padding-bottom: 50px">
+
+        </div>
 
     </div>
 
-    <!--<section class="footer">-->
-        <!--<p>Copyright &copy; 2018 Company Name . Design: <span>y14</span></p>-->
-    <!--</section>-->
 
 </body>
 </html>

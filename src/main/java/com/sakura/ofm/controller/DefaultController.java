@@ -54,6 +54,9 @@ public class DefaultController {
     public ModelAndView write(@RequestAttribute("responseModel") DefaultResponseModel responseModel){
         ModelAndView mv = new ModelAndView("write");
         mv.addObject("responseModel",responseModel);
+        if (null != TokenHelper.getToken()){
+            responseModel.setLogin(true);
+        }
         return mv;
     }
 
